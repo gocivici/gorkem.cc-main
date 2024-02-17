@@ -17,15 +17,17 @@
         </div>
         {# <div class="project-card__body"> #}
 
-          {# <h4 class="projectCardTitle">
-            {{ project.data.title }}
-          </h4> #}
+
           {# <p class="project-card__summary">{{ project.data.summary }}</p> #}
           <div class="projectTagRow">
             {% for tag in project.data.tech %}
               <span class="contentTag {{ tag | replace(" ", "-") }}">{{ tag }}</span>
             {% endfor %}
           </div>
+
+                    {# <h4 class="projectCardTitle">
+            {{ project.data.title }}
+          </h4> #}
 
         {# </div> #}
       </article>

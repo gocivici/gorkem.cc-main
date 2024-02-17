@@ -8,7 +8,7 @@ created: 2021-11-08
 type: "Project Showcase"
 tech:
   - "Raspberry Pi"
-  - "Quantum Computing"
+  - "Quantum Comp"
   - "Halloween"
 siteUrl: "#"
 repoUrl: "#"

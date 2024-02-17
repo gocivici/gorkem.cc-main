@@ -69,6 +69,13 @@ and then link it! Many fonts have separate files for each style
     }
 
     @font-face {
+        font-family: asciiFont;
+        src: url(./CONSOLA.ttf);
+        font-style: normal;
+        
+    }
+
+    @font-face {
         font-family: VHS;
         src: url(./easvhs.ttf);
         font-style: normal;
@@ -413,8 +420,9 @@ text-decoration:none; */
         text-shadow: 3px 3px 16px #FF0000;
         /* text-shadow: 0px 0px 16px #ff8000; */
         backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         white-space: pre;
-        font-family: Consolas; 
+        font-family: asciiFont; 
         font-size: 17px;
         font-weight: bold;
         /* padding-top:10px ; */
@@ -676,9 +684,9 @@ between the sidebars! */
 
        /* Project card styles*/
        .projectTagRow {
-        position: absolute;
+        /* position: absolute; */
         bottom: 5px;
-        padding-top: 0px;
+        padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 5px;
         
@@ -774,7 +782,7 @@ between the sidebars! */
         background-color: #8c78a5;
         box-shadow: 0px 0px 8px #8c78a5;
     }
-    .Quantum-Computing{
+    .Quantum-Comp{
         background-color: #5ab552;
         box-shadow: 0px 0px 8px #5ab552;
     }
@@ -856,8 +864,8 @@ between the sidebars! */
       .project-list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
-        gap: 28px;
+        justify-content: center;
+        gap: 25px;
         margin: 0px;
       }
 
