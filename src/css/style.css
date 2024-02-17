@@ -419,8 +419,9 @@ text-decoration:none; */
         /* background-color: rgba(0, 0, 0, 0.65); */
         text-shadow: 3px 3px 16px #FF0000;
         /* text-shadow: 0px 0px 16px #ff8000; */
-        backdrop-filter: blur(8px);
+
         -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
         white-space: pre;
         font-family: asciiFont; 
         font-size: 17px;
@@ -665,6 +666,7 @@ between the sidebars! */
     }
     .main-right{
         background-color: #1522387b;
+        -webkit-backdrop-filter: blur(64px);
         backdrop-filter: blur(64px);
         
     }
@@ -672,6 +674,7 @@ between the sidebars! */
         /* background-color: rgba(0, 0, 0, 0.45); */
         /* background-color: rgba(40, 40, 40, 0.555); */
         background-color: rgba(40, 40, 40, .7);
+        -webkit-backdrop-filter: blur(64px);
         backdrop-filter: blur(64px);
         /* backdrop-filter: grayscale(80%);  */
     }
@@ -1155,6 +1158,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
       .commentWrapper{
         width: 786px;
         background-color: rgba(0, 0, 0, 0.415);
+        -webkit-backdrop-filter: blur(16px);
         backdrop-filter: blur(16px);
         font-size: 17px;
 
