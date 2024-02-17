@@ -1,0 +1,76 @@
+---
+layout: "base.njk"
+header: "Personal Blog"
+---
+
+<link rel="stylesheet" href="/css/prism-pojoaque.css"/>
+<div id="flex">
+    <div class="left-box">
+        <div class="window main-left">
+            <div class="title-bar">
+                <div class="title-bar-text">Blog // {{ title }}
+                </div>
+                <div class="title-bar-controls">
+                    <!-- <button aria-label="Help"></button> -->
+                    <button disabled aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <main>
+
+                    <div class="project">
+                        <div class="topHeader">
+
+                            <h1 class="project__heading">{{ title }}</h1>
+                            <!-- <h4 class="projectSummary">{{ summary }}</h4> -->
+                            <div class="dateSection">
+                                <small class="dateString">
+                                    <strong>Created:</strong>
+                                    {{ created }} | <strong>Updated:</strong>
+                                    {{ page.date | postDate }}</small>
+                            </div>
+                        </div>
+                        <div class="project__image-wrapper">
+                            <!-- <img class="projectImage" src="{{ image }}" alt="{{ imageAlt }}"> -->
+                        </div>
+                        <div class="project__content prose">
+                            {{ content | safe }}
+                        </div>
+                        {% if nextPost.url %}
+                            <p class="ctr">
+                                <strong>Next</strong>:
+			<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+                            </p>
+                        {% endif %}
+                        {% if prevPost.url %}
+                            <p class="ctr">
+                                <strong>Previous</strong>:
+			<a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+                            </p>
+                        {% endif %}
+                    </div>
+
+                </main>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="right-box TOCnav">
+        <div class="window main-right fixed">
+            <div class="title-bar inactive">
+                <div class="title-bar-text">Navigation.exe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Help"></button>
+                    <!-- <button aria-label="Close"></button> -->
+                </div>
+            </div>
+            <div class="window-body" style="padding-bottom: 0px;">
+                <div id="rightSidebar tocNavigation" style="padding-bottom: 0px; margin-bottom: 0px; max-height: 600px; overflow-y:auto;">
+                    {{ content | toc | safe }}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

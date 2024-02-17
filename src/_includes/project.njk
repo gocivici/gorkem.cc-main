@@ -1,0 +1,137 @@
+---
+layout: "base.njk"
+header: "DIY Projects     %"
+---
+<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+<link rel="stylesheet" href="/css/prism-atom-dark.css"/>
+<link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+<div id="flex">        
+        <div class="left-box">
+                <div class="window main-left">
+                <div class="title-bar">
+                    <div class="title-bar-text">Projects // {{ title }}</div>
+                    <div class="title-bar-controls">
+                        <!-- <button aria-label="Help"></button> -->
+                        <button aria-label="Restore" onclick="location.href='/projects';"></button>
+                        <button disabled aria-label="Close"></button>
+                      </div>
+                </div>
+            <div class="window-body">
+                <main>
+
+                    <div class="project">
+<div class="topHeader">
+
+  <h1 class="project__heading">{{ title }}</h1>
+  <h4 class="projectSummary">{{ summary }}</h4>
+
+  <div class="dateSection">
+    <div class="projectTagRowTitle">
+      {% for tag in tech %}
+        <span class="contentTag {{ tag | replace(" ", "-") }}">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  <small class="dateString"><strong>Created:</strong> {{ created | postDate }} | <strong>Updated:</strong> {{ page.date | postDate }}</small>
+
+</div>
+</div>
+  <div class="project__image-wrapper">
+      <!-- <img class="projectImage" src="{{ image }}" alt="{{ imageAlt }}"> -->
+  </div>
+  <div class="project__content prose">
+    {{ content | safe }}
+  </div>
+  	{% if nextPost.url %}
+		<p class="ctr">
+			<strong>Next</strong>:
+			<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+		</p>
+	{% endif %}
+	{% if prevPost.url %}
+		<p class="ctr">
+			<strong>Previous</strong>:
+			<a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+		</p>
+	{% endif %}
+</div>
+
+                    
+                </main>
+            </div>
+            </div>
+           
+
+
+
+
+        
+        
+            </div>
+
+                        <div class="right-box TOCnav">
+                <div class="window main-right fixed">
+                    <div class="title-bar inactive">
+                        <div class="title-bar-text">Navigation.exe</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Help"></button>
+                            <!-- <button aria-label="Close"></button> -->
+                          </div>
+                    </div>
+                <div class="window-body" style="padding-bottom: 0px;">
+                <div id="rightSidebar tocNavigation" style="padding-bottom: 0px; margin-bottom: 0px; max-height: 600px; overflow-y:auto;">
+                    {{ content | toc | safe }}
+                </div>
+                </div>
+                </div>
+
+
+
+
+
+
+            </div>
+</div>
+
+<div class="left-box">
+<div class="window commentWrapper">
+  <div class="title-bar">
+      <div class="title-bar-text">Comments</div>
+      <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+  </div>
+<div class="window-body">
+  
+  <main>
+
+    <div id="comment-section"></div>
+      
+  </main>
+  
+</div>
+</div>
+</div>
+
+        
+
+
+
+
+
+<script src="/custom.js"></script>
+            <script>
+initComments({
+  node: document.getElementById("comment-section"),
+  defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+  serverName: "cactus.chat",
+  siteName: "<gorkem.cc>",
+  commentSectionId: "{{ page.url }}",
+  loginEnabled: "false",
+  guestPostingEnabled: "true"
+})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="/splide-init.js"></script>
+

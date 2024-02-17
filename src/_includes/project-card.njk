@@ -1,0 +1,36 @@
+{# <div class="left-box"> #}
+<div class="window main-left">
+  <div class="title-bar grey">
+    <div class="title-bar-text">{{project.data.title}}</div>
+    <div class="title-bar-controls">
+      <!-- <button aria-label="Help"></button> -->
+      <button aria-label="Maximize" onclick="location.href='{{ project.url }}';"></button>
+      <button disabled aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <a href="{{ project.url }}">
+      <article class="project-card">
+        <div class="projectImgContainer">
+          <img class="projectImage" src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}">
+          {# <div class="topProjectTag {{ 'showcaseTag' if project.data.type == 'Project Showcase' else 'DIYtag' }} ">{{ project.data.type }}</div> #}
+        </div>
+        {# <div class="project-card__body"> #}
+
+          {# <h4 class="projectCardTitle">
+            {{ project.data.title }}
+          </h4> #}
+          {# <p class="project-card__summary">{{ project.data.summary }}</p> #}
+          <div class="projectTagRow">
+            {% for tag in project.data.tech %}
+              <span class="contentTag {{ tag | replace(" ", "-") }}">{{ tag }}</span>
+            {% endfor %}
+          </div>
+
+        {# </div> #}
+      </article>
+    </a>
+
+  </div>
+</div>
+{# </div> #}

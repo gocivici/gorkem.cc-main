@@ -1,0 +1,1336 @@
+
+
+    :root {
+        --header-image: url('/images/HeaderTest.png');
+        --theme-1: url('/images/tileg.jpg');
+        --theme-2:url('/images/hallo.png');
+        --theme-3:url('/images/stars3.gif');
+        --theme-4:url('/images/vintage.png');
+        
+        /* colors */
+        /* --content: #c3aae5; */
+    }
+
+    /* if you have the URL of a font, you can set it below */
+    /* feel free to delete this if it's not your vibe */
+
+    /* this seems like a lot for just one font and I would have to agree 
+but I wanted to include an example of how to include a custom font.
+If you download a font file you can upload it onto your Neocities
+and then link it! Many fonts have separate files for each style
+(bold, italic, etc. T_T) which is why there are so many!
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:500');
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+        
+    }
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    /* @font-face {
+        font-family: Win98;
+        src: url(./Windows\ Regular.ttf);
+        
+    } */
+
+    @font-face {
+        font-family: typeWriter;
+        src: url(./typewriter.ttf);
+        
+    }
+
+    @font-face {
+        font-family: win98;
+        src: url(./FreePixel.ttf);
+        /* font-style: normal; */
+        /* font-weight: 500; */
+        
+    }
+
+    @font-face {
+        font-family: VHS;
+        src: url(./easvhs.ttf);
+        font-style: normal;
+        
+    }
+
+    @font-face {
+        font-family: pix;
+        src: url(./pix.TTF);
+        font-style: normal;
+        
+    }
+
+    @font-face {
+        font-family: WinReg;
+        src: url(./WinReg.ttf);
+        font-style: normal;
+        
+    }
+
+    @font-face {
+        font-family: IBM;
+        src: url(./IBMvga.woff);
+        font-style: normal;
+        
+    }
+
+html{
+    min-height: 100vh;
+    /* position:relative; */
+}
+
+    body {
+        height: 100%;
+        font-family:IBM;
+        /* font-family: 'Open Sans', sans-serif; */
+        margin: 0;
+        background-color: #08031A; 
+        /* you can delete the line below if you'd prefer to not use an image */
+         /* background-repeat: no-repeat; */
+        /* background-attachment: fixed; */
+        /* background-size: cover; */
+        color: #e9e4de;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--theme-3);
+        /* background-image: var(--theme-3); */
+        background-blend-mode: normal;
+        /* filter: grayscale(100%); */
+        /* font-smooth: always !important; */
+    }
+    body img{
+        filter: brightness(.9) contrast(1);
+      }
+
+    #theme-switch2:checked ~ #container {
+        --body-bg-image:var(--red-theme);
+        background-color:red !important;
+    }
+
+    .info-bubble{
+        width: 200px;
+        bottom:103%;
+        /* overflow:hidden; */
+        color: black;
+        visibility: hidden;
+        position: absolute;
+        right: -4px;
+        /* bottom: -33px; */
+        border: 1px solid black;
+        border-radius: 7px;
+        padding: 6px 28px 10px 10px;
+        background-color: #ffffe1;
+        font-size: 11px;
+        white-space: wrap;
+    }
+    .info-bubble:before {
+        content: '';
+        overflow:hidden;
+        position: absolute;
+        display: block;
+        bottom: -19px;
+        right: 14px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 19px 19px 0;
+        border-color: transparent black transparent transparent;
+      }
+      .info-bubble:after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -17px;
+        right: 15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 18px 18px 0;
+        border-color: transparent #ffffe1 transparent transparent;
+      }
+
+    .project{
+        all:initial;
+        font-family: -apple-system, -apple-system,  
+        BlinkMacSystemFont, 'Segoe UI', Roboto,  
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',  
+        'Helvetica Neue', sans-serif;
+        /* font-family: IBM; */
+        /* font-weight: 500; */
+        line-height: 1.5;
+        font-size: 17px;
+        color: #DBDBDB;
+        /* padding-top: 30px; */
+    }
+    .project p{
+        margin-top: 0px;
+    }
+
+    .project img{
+        width: 100%;
+        /* padding-left: 50px;
+        padding-right: 50px; */
+    }
+    .project .imageSlides img{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .project .splide__arrow--next {
+        right: 0em;
+    }
+    .project .splide__arrow--prev {
+        left: 0em;
+    }
+
+    .project .imageSlides{
+        margin-top: 40px;
+    }
+
+
+
+
+    .warning{
+        background-color: #4D3800;
+        border-left: 3px solid #E6A700;
+        padding: 8px 10px;
+        font-family: "win98";
+    }
+
+    .warning p{
+        margin: 0px;
+    }
+
+    .note{
+        background-color: #193C47;
+        border-left: 3px solid #4CB3D4;
+        padding: 8px 10px;
+        font-family: "win98";
+    }
+
+    .note strong{
+        text-shadow: none;
+        color:white;
+    }
+
+    .note p{
+        margin: 0px;
+    }
+
+    #main-carousel button{
+    box-shadow: none;
+    min-width: initial;
+    min-height: initial;
+    font-size: 18px;
+    /* position: absolute !important; */
+    /* color:black !important; */
+}
+
+.thumbnails {
+    display: flex;
+    margin: 1rem auto 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+  }
+
+  .thumbnail.is-active {
+    opacity: 1;
+  }
+
+    .project__heading{
+        padding-top: 30px;
+        margin-bottom: 0px !important;
+    }
+    .topHeader{
+        margin-bottom: 30px;
+    }
+    .dateSection{
+        margin-top: 10px;
+    }
+    .projectSummary{
+        margin-top: 0px !important;
+        color: #A3A3A3 !important;
+        padding-left: 0px !important;
+    }
+    .project :is(h1, h2, h3, h4, h5) {
+        /* all:initial; */
+        margin: .25em 0 1.5em;
+        /* font-family: 'Open Sans', sans-serif; */
+        font-family: IBM;
+        font-weight: 500;
+        line-height: 1.5;
+        /* color:white; ; */
+      }
+
+      .project h1 {
+        margin-top: 0;
+        font-size: 2.49rem;
+      }
+      
+      /* .project h2 {font-size: 1.842rem;margin-bottom:18px;margin-top:54px;} */
+      .project h2 {font-size: 2rem;margin-bottom:18px;margin-top:54px;}
+      
+      /* .project h3 {font-size: 1.63rem;} */
+      .project h3 {font-size: 1.63rem; margin-bottom:12px;margin-top:48px; color:#DBDBDB; text-shadow: none; }
+      
+      .project h4 {font-size: 1.443rem;margin-bottom:4px;margin-top:32px; display: block;}
+      
+      .project h5 {font-size: 1.277rem;}
+      
+      .project small, .text_small {font-size: 0.855rem;}
+
+      .eleventy-plugin-youtube-embed{
+        margin-bottom: 1rem;
+      }
+
+/* code{
+    font: inherit;
+    background-color:hsla(0,0%,100%,.1) ;
+    padding: 0px .1rem;
+    border: .1rem solid rgba(0,0,0,.1);
+
+} */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        height: 100%;
+        font-family: "winReg";
+        font-weight: bold;
+        font-size: 8px;
+        font-weight: 500;
+        padding: 5px 5px;
+    }
+    /* below this line is CSS for the layout */
+
+    /* this is a CSS comment
+to uncomment a line of CSS, remove the * and the /
+before and after the text */
+
+
+    /* the "container" is what wraps your entire website */
+    /* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+    #container {
+        max-width: 960px;
+        /* this is the width of your layout! */
+        /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+        margin: 0 auto;
+        /* padding-top: 50px; */
+        /* this centers the entire page */
+    }
+
+    /* the area below is for all links on your page
+EXCEPT for the navigation */
+    #container a {
+        /* color: #C84B31; */
+        /* font-weight: bold; */
+        /* color: #49adff; */
+        color:#fe6161;
+        text-shadow: 0px 0px 3px #ff4c4c;
+        /* if you want to remove the underline
+you can add a line below here that says:
+text-decoration:none; */
+    }
+    #container a[target=_blank] {
+        padding-right: 0.9em;
+         background-image: url("/images/icons/external.png");
+        background-size: auto 0.9em;
+        background-position: center right;
+        background-repeat: no-repeat;
+        padding-top: 2px;
+        text-shadow:none;
+        filter: drop-shadow(0px 0px 3px #ff4c4c)
+        
+    }
+
+    .icon{
+        width: 25px;
+    }
+    .asciiArt{
+        /* all: initial; */
+        
+		width: 100%;
+		height: 150px;
+		background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png');
+        /* background-color: #282828; */
+        background-color: #301A16;
+        /* background-color: #4d1d24; */
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 10ms ease 2000ms;
+
+        
+            
+            /* background: linear-gradient(90deg,#ff000013,#00ff0011,#0000ff13); */
+            /* z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none; */
+        
+
+        /* background-color: rgba(0, 0, 0, 0.65); */
+        text-shadow: 3px 3px 16px #FF0000;
+        /* text-shadow: 0px 0px 16px #ff8000; */
+        backdrop-filter: blur(8px);
+        white-space: pre;
+        font-family: Consolas; 
+        font-size: 17px;
+        font-weight: bold;
+        /* padding-top:10px ; */
+        padding-bottom:10px ;
+        color: #f9bc60;
+        /* color: #f9bc60; */
+        border: 3px #BEBEBE inset;
+        /* border-right: 2px solid gray;
+        border-left: 2px solid gray; */
+
+    }
+    .headerContainer{
+        margin-bottom: 20px;
+    }
+    #header {
+        width: 100%;
+        /* background-color: #5e4e8c; */
+        /* header color here! */
+        height: 150px;
+        /* this is only for a background image! */
+        /* if you want to put images IN the header, 
+you can add them directly to the <div id="header"></div> element! */
+        background-image: var(--header-image);
+        background-size: 100%;
+    }
+
+    /* navigation section!! */
+    #navbar {
+        /* height: 100%; */
+        /* padding-bottom: 50px; */
+        /* margin-bottom: 10px; */
+        /* background-color: #13092D; */
+        /* navbar color */
+        width: 100%;
+        vertical-align: center;
+        
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        border: 3px solid #bebebe;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: space-between;
+        vertical-align: bottom !important;
+        /* vertical-align: middle; */
+    }
+
+    #navbar li {
+        /* padding: 5px 5px; */
+        border: 2px solid #bebebe;
+        background-color: #047e7e;
+        border-bottom:none;
+        border-top: none;
+        /* color: white; */
+        /* border-top-right-radius: 12px;
+        border-top-left-radius: 12px; */
+        /* border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px; */
+        
+        width: 100%;
+        flex-direction: row;
+
+        text-align: center;
+        margin:auto 0;
+        
+    }
+
+    .right-box{
+        width: 210px;
+        /* background-color: #15223857; */
+        /* background-color: #152238; */
+        margin-left: 20px;
+    }
+    .TOCnav{
+        width:200px;
+        
+        /* position: relative; */
+    }
+    .fixed
+    {
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    /* top: 20px; */
+    }
+    .left-box{
+        width: 100%;
+    }
+
+ 
+    
+    /* navigation links*/
+    #navbar li a {
+        color: #ffffff;
+        font-size: large;
+        margin:0px;
+        /* navbar text color */
+        font-weight: 800;
+        text-decoration: none;
+        vertical-align: middle;
+        /* this removes the underline */
+    }
+
+    /* navigation link when a link is hovered over */
+    #navbar li a:hover {
+        color: #a49cba;
+        text-decoration: underline;
+    }
+
+    #flex {
+        display: flex;
+        
+    }
+    .title-bar{
+        font-family: 'win98';
+        font-size:small;
+    }
+
+    .window{
+        margin-bottom: 10px;
+        /* background: transparent; */
+    }
+    .window-body{
+        /* font-family: 'win98'; */
+        border: 3px inset;
+        font-family: IBM;
+        line-height: 1.5;
+        padding: 0px;
+        margin: 0px;
+        
+        /* background-color: #000055a6; */
+    }
+
+    .welcomeBox{
+        all:initial;
+        font-family: IBM;
+        
+        /* font-family: 'Open Sans', sans-serif; */
+        /* font-size: 1em; */
+        font-weight: 500;
+        line-height: 1.5;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .welcomeBox h3{
+        margin-bottom: -5px;
+        margin-top: 15px;
+    }
+    .welcomeBox main{
+        order: 1;
+        /* width: 60%; */
+        /* display:inline; */
+        /* float:left; */
+    }
+    .welcomeBox figure{
+        order: 2;
+        height:100%;
+        margin: auto;
+        padding-right: 40px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .welcomeBox figcaption{
+        font-size: 12px;
+        
+    }
+    .updatesBox{
+        font-size: 16px;
+        height: 360px;
+        overflow-y: scroll;
+    }
+    .updatesBox ul{
+        padding-left: 15px;
+        margin-top: 0px;
+        font-size: 14px;
+    }
+
+    .updatesBox p{
+        margin-bottom: 0px;
+    }
+
+
+    ul.tree-view{
+        background-color: inherit;
+        box-shadow: none;
+    }
+    ul.tree-view ul{
+        margin-left: 0px;
+    }
+    ul.tree-view ul>li:last-child:after{
+        background-color: inherit;
+    }
+    ul.tree-view li, ul.tree-view ul{
+        margin-top: 5px;
+        line-height: 1.5;
+    }
+
+
+    summary a * {
+        pointer-events: none;
+      }
+    /* this colors BOTH sidebars
+if you want to style them separately,
+create styles for #leftSidebar and #rightSidebar */
+    aside {
+   
+padding: 10px;
+        
+        
+    }
+
+
+    .aboutMe, .aboutPage{
+        width: 50%;
+    }
+    /* .tocNavigation{
+        max-height: 200px;
+    } */
+
+
+    /* this is the color of the main content area,
+between the sidebars! */
+    main {
+        /* background-color: #2a2a2a; */
+        /* background-color: #00003e; */
+        
+        flex: 1;
+        padding-left: 30px;
+        padding-right: 30px;
+        order: 2;
+        /* border: #383838 3px solid; */
+        /* border-radius: 4px; */
+
+        /* width: 600px; */
+    }
+    .main-right{
+        background-color: #1522387b;
+        backdrop-filter: blur(64px);
+        
+    }
+    .main-left{
+        /* background-color: rgba(0, 0, 0, 0.45); */
+        /* background-color: rgba(40, 40, 40, 0.555); */
+        background-color: rgba(40, 40, 40, .7);
+        backdrop-filter: blur(64px);
+        /* backdrop-filter: grayscale(80%);  */
+    }
+    h4{
+        display: inline; 
+        vertical-align: middle;
+        font-size: large;
+        /* padding-left: 5px; */
+    }
+
+       /* Project card styles*/
+       .projectTagRow {
+        position: absolute;
+        bottom: 5px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        
+    }
+    .projectTagRowTitle{
+        bottom: 5px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+
+    }
+.projectImgContainer{
+    max-width: 290px;
+    position: relative;
+    text-align: center;
+}
+
+.project-list .window.main-left{
+    margin-bottom:0px;
+}
+    .topProjectTag {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 8px 10px;
+        /* border-right: 2px solid #bebebe;
+        border-bottom: 2px solid #bebebe; */
+
+      }
+    
+    .showcaseTag{
+        background-color: #047e00;
+    }
+    .DIYtag{
+        background-color: #7e007e;
+    }
+    .contentFilter{
+        width: 100px;
+    }
+
+    .contentTag {
+
+        /* border-radius: 4px; */
+        /* background-color: #7e0000; */
+        background-color: grey;
+        /* border: 2px solid rgb(167, 167, 167); */
+        /* box-shadow: 0px 0px 8px #FF0000; */
+        font-size: 12px;
+        font-weight: bold;
+        margin-right: 3px;
+        padding: 2px 5px;
+        font-family: 'Win98';
+        /* text-decoration: none; */
+        text-transform: uppercase;
+    }
+    .All-Projects{
+        border:3px dashed white;
+    }
+
+    .Raspberry-Pi{
+        background-color: #c10060;
+        box-shadow: 0px 0px 8px #c10060;
+    }
+
+    .Arduino{
+        background-color: #008080 ;
+        box-shadow: 0px 0px 8px #008080;
+    }
+    .Astronomy{
+        background-color: #3859b3;
+        box-shadow: 0px 0px 8px #3859b3;
+    }
+    .Clock{
+        background-color: #c878af ;
+        box-shadow: 0px 0px 8px #c878af;
+    }
+    .Tool\/Utility{
+        background-color: #dab163  ;
+        box-shadow: 0px 0px 8px #dab163 ;
+    }
+    .pico-8{
+        background-color: #b33831 ;
+        box-shadow: 0px 0px 8px #b33831 ;
+    }
+    .Halloween{
+        background-color: #ea4f36;
+        box-shadow: 0px 0px 8px #ea4f36;
+    }
+    .OSHWA-Certified{
+        background-color: #006554 ;
+        box-shadow: 0px 0px 8px #006554 ;
+    }
+    .Custom-PCB{
+        background-color: #8c78a5;
+        box-shadow: 0px 0px 8px #8c78a5;
+    }
+    .Quantum-Computing{
+        background-color: #5ab552;
+        box-shadow: 0px 0px 8px #5ab552;
+    }
+    .Woodworking{
+        background-color: #9e4539;
+        box-shadow: 0px 0px 8px #9e4539;
+    }
+    .Open-CV{
+        background-color: #0b8a46 ;
+        box-shadow: 0px 0px 8px #0b8a46;
+    }
+    .Game{
+        background-color: #62a477 ;
+        box-shadow: 0px 0px 8px #62a477 ;
+    }
+    .IOT{
+        background-color: #b0a7b8;
+        box-shadow: 0px 0px 8px #b0a7b8;
+    }
+    .project-card{
+        /* border: 2px solid #bebebe; */
+        background-color: transparent;
+        /* color:black; */
+        /* background-color: rgba(255, 255, 255, 0.055); */
+        box-shadow: rgba(15, 15, 15, 0.2) 0px 0px 0px 1px, rgba(15, 15, 15, 0.2) 0px 2px 4px;
+        /* padding-bottom:10px;   */
+        /* margin-bottom: 10px; */
+        /* border: 2px solid #bebebe; */
+        /* border-style: double; */
+    }
+    
+    .tagBox{
+        text-align: center;
+        padding: 10px;
+        line-height: 25px;
+        /* font-size: 15px; */
+    }
+    .tagBox .contentTag{
+        font-size: 13px;
+    }
+    .tagBox button{
+        all:initial;
+        width: auto;
+        background: none;
+        border:none;
+        box-shadow: none;
+        color:white;
+        padding: 0;
+
+    }
+
+    .project-card:hover{
+        /* background-color: #d27f26; */
+
+    }
+    .project-list a:link{   
+       text-decoration: none !important;
+
+    }
+    .galleryContainer a{
+        color:white !important;
+    }
+    .projectCardTitle{
+        padding-left: 10px;
+    }
+    .galleryContainer{
+        /* padding-top: 20px; */
+    }
+    .projectImage{
+        /* max-width: 288px !important; */
+        width: 100%;
+        margin-bottom:-5px;
+        /* border: 5px splid white; */
+      }
+
+    .blogImageSmall{
+        width: 100%;
+    }
+      .project-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 28px;
+        margin: 0px;
+      }
+
+      ol {
+        padding-inline-start:15px;
+      }
+    /* what's this "order" stuff about??
+allow me to explain!
+if you're using both sidebars, the "order" value
+tells the CSS the order in which to display them.
+left sidebar is 1, content is 2, and right sidebar is 3! */
+
+    */ #leftSidebar {
+        order: 1;
+    }
+
+    #rightSidebar {
+        order: 3;
+        
+        /* background-color: #152238; */
+    }
+    /* iframe {
+        font-family: win98 !important;
+        
+    } */
+
+    footer {
+        /* background-color: #6d40dd; */
+        /* background color for footer */
+        width: 100%;
+        /* height: 40px; */
+        padding: 10px;
+        text-align: center;
+        /* this centers the footer text */
+    }
+
+    h1,
+    h2,
+    h3
+    {
+        /* color: #49adff; */
+        text-shadow: 1px 1px 4px #ff8000;
+        color:#f9bc60;
+    }
+
+    /* h1 {
+        font-size: 25px;
+    } */
+    p {
+        /* margin-top: 0; */
+        margin-bottom: 1rem;
+        /* font-size: medium;
+        color: white;
+        line-height: 1.5; */
+    }
+    strong {
+        /* this styles bold text */
+        /* color: #06ffff; */
+        /* color:#97a6f0; */
+        /* color:#FFA500; */
+        text-shadow: 1px 1px 4px #ff8000;
+        color:#f9bc60;
+    }
+
+    /* this is just a cool box, it's the darker colored one */
+    .box {
+        background-color: #13092D;
+        border: 1px solid #ED64F5;
+        padding: 10px;
+    }
+    .bottomWindowUpdates{
+        width: 50%;
+        float: left;
+    }
+    .bottomWindowStatus{
+        width: 48%;
+        float: left;
+    }
+
+    .activityBox small{
+        font-size: 10px;
+        font-family: winReg;
+        margin-left: -5px;
+    }
+
+    .activityBox legend {
+        background: transparent;
+        font-size: smaller;
+        padding: 0px 10px 0px 10px;
+        /* border-top: 2px solid; */
+        /* border-bottom: 2px solid; */
+        /* all:unset; */
+        margin:0 auto;
+    }
+
+    .activityBox legend strong{
+        
+        /* font-size: 22px; */
+        /* color: ; */
+        /* all:unset; */
+        /* margin:0 auto; */
+    }
+
+    .movieBox{
+        /* border: 2px white inset; */
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 5px;
+        /* width: 100%; */
+        
+        /* background-color: rgb(61, 61, 61); */
+    }
+    
+    .statusBox{
+        width: 100%;
+        border: 2px inset;
+        background-color: rgb(40, 40, 40);
+        margin-left: 3px;
+        margin-right: 3px;
+
+    } 
+
+    .booklog, .gamelog{
+    padding:10px 20px 10px 20px ;
+    text-align: center;
+
+    }
+
+    .booklog p, .gamelog p{
+
+        display:none;
+        
+        
+        }
+
+
+
+    .movieLog{
+        border: 2px inset;
+        background-color: rgb(40, 40, 40);
+    }
+    .statusContainer{
+        display: flex;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin: 5px;
+    }
+
+    .subtitle{
+        background-color: #828282;
+        font-size: 14px;
+        border: 2px inset;
+    }
+
+    .movieBox legend {
+        background: transparent;
+        font-size: smaller;
+        padding: 0px 10px 0px 10px;
+        /* border-top: 2px solid; */
+        /* border-bottom: 2px solid; */
+        /* all:unset; */
+        /* margin:0 auto; */
+    }
+
+    #statuscafe {
+        padding: 0px 5px 10px 5px;
+        
+        font-size: small;
+        background-color: none;
+        /* border: 1px solid midnightblue; */
+    }
+    #statuscafe-username {
+        font-size: 11px;
+        /* margin-bottom: .5em; */
+    }
+
+    #statuscafe-username a{
+        font-size: 14px;
+        /* margin-bottom: .5em; */
+    }
+
+    #statuscafe-content {
+        /* margin: 0 1em 0.5em 1em; */
+    }
+
+    .postCollection{
+        order:1;
+        width: 100%;
+        
+    }
+    
+    .postCollection a{
+        text-decoration: none;
+        color: white;
+    }
+    .cardWrapper{
+        display: flex;
+        height: 200px;
+    }
+
+    .blogImage{
+        /* padding: 20px; */
+        /* float: left; */
+        width: 267px;
+        /* height: 200px; */
+    }
+
+    .blogSummary{
+        flex: 1;
+        min-height:170px;
+        overflow: hidden;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+.categoryBox{
+    order:2;
+}
+    .categoryBox a{
+        font-size: medium;
+    }
+
+    .categoryBox ul{
+        padding-left: 25px;
+    }
+
+    .blogSummary .dateString{
+        font-size: 14px;
+    }
+
+    .blogSummary h4{
+        padding-left: 0px;
+        font-size: 1.5rem
+    }
+
+    .blogSummary > button{
+        font-size: 12px;
+        width: initial;
+        padding: 5px 5px;
+        /* display: inline; */
+        /* margin-top: 10px; */
+        vertical-align: middle;
+        /* margin-right: 5px; */
+        height: initial;
+        /* float: right; */
+        /* padding: 1px 2px; */
+        /* all:initial; */
+    }
+
+    .blogSummary .dateSection{
+        margin-top: 0px;
+    }
+
+    .summaryText{
+        height: 59px;
+        overflow: hidden;
+        
+        text-overflow: ellipsis;
+    }
+
+    /* CSS for extras */
+
+    #topBar {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        /* font-size: smaller; */
+        background-color: #13092D;
+    }
+    .cactus-container{
+        position: relative;
+        max-width: 780px;
+    }
+
+    
+    /* #navbar li.active{
+        background-color:#00cece;
+        
+    } */
+    button.active {
+        box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a,
+          inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+      }
+
+      .commentWrapper{
+        width: 786px;
+        background-color: rgba(0, 0, 0, 0.415);
+        backdrop-filter: blur(16px);
+        font-size: 17px;
+
+    }
+    .commentWrapper main {
+    padding-top: 10px;
+}
+
+
+
+.cactus-editor-buttons .cactus-button{
+background: none !important;
+box-shadow: none !important;
+/* width: auto; */
+}
+
+.cactus-editor-buttons .cactus-send-button{
+    background: silver !important;
+    color: black;
+    box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf !important;
+    width: auto;
+    }
+
+    .cactus-editor-buttons .cactus-button:after{
+        content: "‎ (Optional)";
+    }
+
+    .cactus-editor-buttons .cactus-send-button:after{
+        content: "‎ Comment";
+        }
+.cactus-editor-name input[type="text"]{
+    height: 40px !important;
+}
+
+
+
+
+.activate a{
+    color:white !important;
+}
+
+.rssFeed{
+    display: flex;
+}
+
+.rssFeed img{
+    width: 100%;
+}
+
+.rssFeed div{
+flex: 33%;
+padding: 8px;
+}
+.booklog .rssFeed div, .gamelog .rssFeed div{
+    padding: 0px;
+}
+
+.rssFeed p{
+    margin: 0px;
+    text-align: center;
+}
+
+.window.main-left.bottomWindowStatus{
+    margin-left: 7px;
+}
+
+
+    /* BELOW THIS POINT IS MEDIA QUERY */
+
+    /* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+    @media only screen and (max-width: 800px) {
+        #flex {
+            flex-wrap: wrap;
+        }
+        .left-box{
+            width: 100%;
+            padding: 10px 5px 0px 5px;
+        }
+        .window{
+            width: 100%;
+            margin-left: 0px;
+            
+        }
+        .categoryBox{
+            order:1;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+
+        }
+        .categoryBox li{
+            /* list-style-type: none; */
+            display: inline;
+            white-space:nowrap;
+            padding-left: 5px;
+        }
+        .categoryBox ul{
+            /* list-style-type: none; */
+            display: inline;
+            padding: 10px;
+            
+        }
+        .postCollection{
+            order:2;
+        }
+        .right-box{
+            width:100%;
+            margin-left: 0px;
+        }
+
+        .window.main-left.bottomWindowStatus{
+            margin-left: 0px;
+        }
+
+        aside {
+            width: 100%;
+        }
+
+
+        main {
+            order: 1;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .welcomeBox figure{
+            padding:0px 0px 15px 0px;
+            width: 100%;
+        }
+
+        #leftSidebar {
+            order: 2;
+        }
+
+        #rightSidebar {
+            order: 3;
+        }
+
+        #navbar h4 {
+            font-size: 13px;
+            padding: 0px;
+        }
+
+        #navbar img{
+            margin: 0px 5px 0px 5px;
+            /* margin: 0 auto; */
+        }
+
+        #headerArea{
+            width: 100%;
+        }
+        #navbar button{
+            min-width: 30px;
+
+        }
+
+        .asciiArt{
+            font-size: 8px;
+            height: 80px;
+            padding: 0;
+        }
+
+        .project-list{
+            width: 90%;
+            margin: auto;
+        }
+        .projectImgContainer{
+            width: 100%;
+            max-width: none;
+
+        }
+        /* Blog Section */
+
+        .blogImage{
+            display: none;
+            width: 150px;
+        }
+        :root{
+        --theme-3: url('/images/carpet.JPG');
+        }
+    }

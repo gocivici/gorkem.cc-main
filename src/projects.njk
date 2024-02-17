@@ -1,0 +1,78 @@
+---
+title: "Görkem's Projects"
+header: "DIY Projects     %"
+layout: "base.njk"
+---
+
+{# <div class="left-box">
+                <div class="window main-left">
+                <div class="title-bar">
+                    <div class="title-bar-text">Projects</div>
+                    <div class="title-bar-controls">
+                        <!-- <button aria-label="Help"></button> -->
+                        <button disabled aria-label="Close"></button>
+                      </div>
+                </div>
+            <div class="window-body"> #}
+{# <main> #}
+<div class="tagBoxContainer">
+
+    <div class="window main-left">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">ProjectTags.exe</div>
+        <div class="title-bar-controls">
+          <button aria-label="Help"></button>
+          <!-- <button aria-label="Close"></button> -->
+        </div>
+      </div>
+      <div class="window-body" style="padding-bottom: 0px;">
+        
+        <div class="tagBox">
+
+          {% for projectTag, count in collections.projectTags| dictsort(false,'value') | reverse %}
+          
+            {% if projectTag == "All Projects" %}
+
+              <button type="tag" onclick="location.href='/projects';"><span class="contentTag {{ projectTag | replace(" ", "-") }}">{{ projectTag }}({{ count }})</span></button>
+
+            {% else %}
+              {% set caturl = ["/projects", "projectTag", projectTag] | join("/") %}
+
+              
+              <button type="tag" onclick="toggleTag('{{ projectTag | replace(" ", "-")}}')"><span class="contentTag {{ projectTag | replace(" ", "-") }}">{{ projectTag }}({{ count }})</span></button>
+
+            {% endif %}
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="galleryContainer">
+{# <div class="filterButtonsCOntainer">
+                      <button class="contentFilter">test</button>
+                      <button class="contentFilter">test</button>
+                      <button class="contentFilter">test</button>
+                      <button class="contentFilter">test</button>
+                      </div> #}
+<div class="project-list">
+  {% for project in collections.projects | sort(true,false,'data.created') %}
+    {% include "project-card.njk" %}
+  {% endfor %}
+</div>
+
+</div>
+{# </main> #}
+{# </div>
+            </div>
+           
+
+
+
+
+        
+        
+            </div> #}
+<script src="../projects.js"></script>

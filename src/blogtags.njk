@@ -1,0 +1,54 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - projects
+permalink: /blog/category/{{ tag }}/
+layout: base.njk
+eleventyComputed:
+  pageTitle: Posts Tagged "{{ tag }}"
+title: Görkem's Blog
+---
+
+<div id="flex"> 
+  <div class="postCollection">
+    {% set taglist = collections[ tag ] %}
+  {% for blogPost in taglist| reverse %}
+    {% include "post-card.njk" %}
+  {% endfor %}
+</div>
+<div class="categoryBox">
+                        <div class="right-box TOCnav">
+                <div class="window main-right fixed">
+                    <div class="title-bar inactive">
+                        <div class="title-bar-text">Categories.exe</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Help"></button>
+                            <!-- <button aria-label="Close"></button> -->
+                          </div>
+                    </div>
+                <div class="window-body" style="padding-bottom: 0px;">
+                <div id="rightSidebar tocNavigation" style="padding-bottom: 0px; margin-bottom: 0px; max-height: 600px; overflow-y:auto;">
+
+                 <ul>
+                  {% for category, count in (collections.categories) %}
+                      {% if category == "All posts" %}
+                          <li><a href="{{ '/blog' | url }}">{{ category }} ({{ count }})</a></li>
+                      {% else %}
+                          {% set caturl = ["/blog", "category", category] | join("/") %}
+                          <li><a href="{{ caturl | url }}">{{ category }} ({{ count }})</a></li>
+                      {% endif %}
+                  {% endfor %}
+                 </ul>
+
+                    
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+                

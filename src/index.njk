@@ -1,0 +1,301 @@
+---
+title: "Görkem's Webspace"
+header: "Görkem's Webspace"
+layout: "base.njk"
+---
+
+<!-- <aside id="leftSidebar" style="margin-right: 10px;"> -->
+<!-- <div class="title">Navigation</div> -->
+<!-- <h2>Updates</h2> -->
+<!-- <h2>🏠Home</h2>
+                    <h2>❓About</h2>
+                    <h2>🛠️DIY</h2>
+                    <h2>📓Notes</h2> -->
+<!-- <div class="box">
+
+                    </div> -->
+<div id="app"></div>
+<!-- </aside> -->
+<div id="flex">
+    <div class="left-box">
+        <div class="window main-left">
+            <div class="title-bar grey">
+                <div class="title-bar-text">Welcome.txt</div>
+                <div class="title-bar-controls">
+                    <div class="info-bubble">Nothing special, just a welcome message..</div>
+                    <button id="Recent" aria-label="Help" onClick="toggleBubble(this)"></button>
+                </div>
+            </div>
+            
+            <div class="window-body">
+                <div class="welcomeBox">
+                    {# <iframe height="155" style="width:100%; border:none; background:transparent;" src="https://wttr.in/ankara?Q?1?F" name="wttr.in"></iframe> #}
+                    <main>
+
+                        <h3>Welcome!</h3>
+                        <p>I'm Görkem and this is my little corner on the internet where I share my thoughts, experiments, <a href="./projects">projects</a>, and whatever else I feel like putting here!</p>
+                        <p>It's not much here yet, but check back later and hopefully things will grow with time.</p>
+                        <p>this site looks best on desktop, but should still be compatible with most mobile screens</p>
+
+                        {# <p>Integer condimentum tempor leo ut tincidunt. Praesent viverra ante ornare, hendrerit dui quis, scelerisque urna. Suspendisse ut dui vehicula, faucibus dui et, sodales lorem. In neque sem, feugiat sed elit id, fermentum viverra nibh. Quisque mauris felis, consequat vitae tincidunt sed, imperdiet at nulla. Maecenas gravida, nibh quis vestibulum iaculis, nisi ex mollis elit, a vehicula purus nulla eu leo. Nulla nec mollis erat.</p> #}
+
+                    </main>
+                    <figure>
+                        <img src="./images/GuestbookSpell.gif"></img>
+                        <figcaption>
+                            <a target="_blank" href="https://gorkem.123guestbook.com/">Sign the Guestbook!</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="window main-left bottomWindowUpdates" style="margin-right:5px;">
+            <div class="title-bar grey">
+                <div class="title-bar-text">Website Updates.exe</div>
+                <div class="title-bar-controls">
+                    <div class="info-bubble">I write update logs manually whenever I make changes on the website.</div>
+                    <button id="Recent" aria-label="Help" onClick="toggleBubble(this)"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class=" updatesBox">
+                    <main style="margin-top: 0px;">
+                        <p>
+                            <strong>February 10th, 2024</strong>
+                            <ul>
+                                <li>External links now have a small icon to indicate they are external links.</li>
+                                <li>I updated the <a href="./projects">Projects</a> page, created a gallery layout. I plan to add a filter option for the tags in the future.</li>
+                            </ul>
+                        </p>
+                        <hr>
+                        <p>
+                            <strong>February 3rd, 2024</strong>
+                            <ul>
+                                <li>Changed the overall layout and started using <a href="11ty.dev" target="_blank">11ty</a>. My workflow to upload projects and blog posts should be much easier now.</li>
+                            </ul>
+                        </p>
+                        <hr>
+                        <p>
+                            <strong>January 27th, 2024</strong>
+                            <ul>
+                                <li>I added a recent activities box that uses RSS to fetch data from various apps that I use. </li>
+                            </ul>
+                        </p>
+                        <hr>
+                        <p>
+                            <strong>January 7th, 2024</strong><br>This is an update test!</p>
+                        <hr>
+                        <p>January 7th, 2024<br>This is an update test!</p>
+                        <p>08/09/2023<br>This is an update test!</p>
+
+                        <p>08/09/2023<br>This is an update test!</p>
+                        <p>08/09/2023<br>This is an update test!</p>
+                        <p>08/09/2023<br>This is an update test!</p>
+                        <p>08/09/2023<br>This is an update test!</p>
+                        <p>08/09/2023<br>This is an update test!</p>
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="window main-left bottomWindowStatus">
+            <div class="title-bar grey">
+                
+                <div class="title-bar-text">Recent Activity </div>
+                <div class="title-bar-controls">
+                    <div class="info-bubble">This window uses a free RSS feed scraper called politepol with javascript to update feeds. </div>
+                    <button id="Recent" aria-label="Help" onClick="toggleBubble(this)"></button>
+                </div>
+            </div>
+            
+            <div class="window-body activityBox">
+                {# <div class="statusContainer"> #}
+                {# <div class="statusBox">
+                    <legend><strong>💭 Status</strong> <a href="">via status.cafe</a></legend>
+                <div id="statuscafe">  <div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=gorkem" defer></script>
+                </div> #}
+                {# <img  style="height:100%;width:120px;vertical-align: middle;margin:auto;" src="images/mario.gif"></img> #}
+                {# </div> #}
+
+                {# <p>Feeling: <a href="https://www.imood.com/users/gorkem"><img width="68px" style="vertical-align: middle; padding-bottom: 4px;" src="https://moods.imood.com/display/uname-gorkem/fg-546EE3/trans-1/imood.gif" alt="The current mood of gorkem at www.imood.com" border="0"></a></p> #}
+                
+                <div class="movieBox">
+                    <div class="subtitle">
+                        <strong>🎬 MovieLog</strong>
+                        <small>via Letterboxd</small>
+                    </div>
+                    <div class="movieLog">
+                        <div class="rssFeed"
+                data-rss-feed="https://letterboxd.com/ashby/rss/" 
+                data-rss-link-titles="false" 
+                data-rss-title-wrapper="p" 
+                data-rss-max="3"></div>
+                    </div>
+                </div>
+
+                <div class="statusContainer">
+                    <div class="statusBox">
+                        <div class="subtitle">
+                            <strong>📖 BookLog</strong>
+                            <small>via storygraph</small>
+                        </div>
+                        <div class="booklog">
+                            <div class="rssFeed"
+                data-rss-feed="https://politepol.com/fd/XTjdrZZeMUjC.xml" 
+                data-rss-link-titles="false" 
+                data-rss-title-wrapper="p" 
+                data-rss-max="3">
+                        
+                
+                </div>
+                <a target="_blank" href="https://app.thestorygraph.com/profile/gorkem">Currenly Reading</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="statusBox">
+                        <div class="subtitle">
+                            <strong>🕹️ GameLog</strong>
+                            <small>via backloggd</small>
+                        </div>
+                        
+                        <div class="gamelog">
+                            <div class="rssFeed"
+                data-rss-feed="https://politepol.com/fd/awnh08Vu8T23.xml" 
+                data-rss-link-titles="false" 
+                data-rss-title-wrapper="p" 
+                data-rss-max="3"></div>
+                <a target="_blank" href="https://backloggd.com/u/Gorkem/">Currenly Playing</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="right-box">
+        <div class="window main-right">
+            <div class="title-bar inactive">
+                <div class="title-bar-text">Status.cafe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Help"></button>
+                    <!-- <button aria-label="Close"></button> -->
+                </div>
+            </div>
+            <div class="window-body" style="padding-bottom: 0px;">
+                <aside id="rightSidebar" style="padding-bottom: 0px; margin-bottom: 0px;">
+
+                    <div id="statuscafe">
+                        <div id="statuscafe-username"></div>
+                        <div id="statuscafe-content"></div>
+                    </div>
+                    <script src="https://status.cafe/current-status.js?name=gorkem" defer></script>
+
+                </aside>
+            </div>
+        </div>
+        <div class="window main-right">
+            <div class="title-bar inactive">
+                <div class="title-bar-text">Moon.exe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Help"></button>
+                    <!-- <button aria-label="Close"></button> -->
+                </div>
+            </div>
+            <div class="window-body" style="padding-bottom: 0px;">
+                <aside id="rightSidebar" style="padding-bottom: 0px; margin-bottom: 0px;">
+
+                    <!-- <table cellpadding="0" cellspacing="0" border="0" width="128"><tr><td align="center"><a href="https://www.moonconnection.com" target="mc_moon_ph"><img src="https://www.moonmodule.com/cs/dm/vn.gif" width="128" height="196" border="0" alt="" /></a><div style="position:relative;width:128px;"><div style="position:absolute;top:-20px;left:6px;background:#000000;width:116px;text-align:center;"><a href="https://www.moonconnection.com/moon_phases.phtml" target="mc_moon_ph"><font color="#7F7F7F" size="1" face="arial,helvetica,sans-serif"><span style="color:#7F7F7F;font-family:arial,helvetica,sans-serif;font-size:10px;">moon phases</span></font></a></div></div></td></tr></table> -->
+                    <!-- <iframe width="180" height="180" style="border:none" src="https://dimden.dev/moon" name="dimdenmoonwidget"></iframe> -->
+                    <iframe width="180" height="155" style="border:none;" src="https://dimden.dev/moon?custom=3" name="dimdenmoonwidget"></iframe>
+                    {# <iframe width="180" height="155" style="border:none; background:transparent;" src="https://wttr.in/ankara?Q?0" name="wttr.in"></iframe> #}
+                </aside>
+            </div>
+        </div>
+
+        <div class="window main-right">
+            <div class="title-bar inactive">
+                <div class="title-bar-text">VisitorCounter.exe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Help"></button>
+                    <!-- <button aria-label="Close"></button> -->
+                </div>
+            </div>
+            <div class="window-body" >
+                <aside id="rightSidebar" style="text-align: center;">
+
+                    <a href="https://www.cutercounter.com/"><img src="https://www.cutercounter.com/hits.php?id=hxodcxx&nd=6&style=22" border="0" alt="website counter"></a>
+
+                </aside>
+            </div>
+        </div>
+
+        <div class="window main-right">
+            <div class="title-bar inactive">
+                <div class="title-bar-text">ThemeChanger.exe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Help"></button>
+                    <!-- <button aria-label="Close"></button> -->
+                </div>
+            </div>
+            <div class="window-body" >
+                <aside id="rightSidebar" style="text-align: center;">
+
+                    
+                    <div class="field-row">
+                        <input checked id="theme-switch1" type="radio" name="theme-switch" onClick="changeBackground('1')">
+                        <label for="theme-switch1">Green Tile</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="theme-switch2" type="radio" name="theme-switch" onClick="changeBackground('2')">
+                        <label for="theme-switch2">Silent Hill 3</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="theme-switch3" type="radio" name="theme-switch" onClick="changeBackground('3')">
+                        <label for="theme-switch3">Stars</label>
+                    </div>
+                     <div class="field-row">
+                        <input id="theme-switch4" type="radio" name="theme-switch" onClick="changeBackground('4')">
+                        <label for="theme-switch4">Vintage Tile</label>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+
+        <div class="window main-right">
+            <div class="title-bar inactive">
+                <div class="title-bar-text">Buttons.gif</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Help"></button>
+                    <!-- <button aria-label="Close"></button> -->
+                </div>
+            </div>
+            <div class="window-body"  style="font-family:reset;">
+                <aside id="rightSidebar">
+                    <img src="/images/buttons/nocookie.gif"></img>
+                    <img src="/images/buttons/bestvw.gif"></img>
+                    <img src="/images/buttons/ilovehorror.gif"></img>
+                    <img src="/images/buttons/psbutton.gif"></img>
+                    <img src="/images/buttons/rtr.png"></img>
+                    <img src="/images/buttons/email-icon.gif"></img>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./custom.js"></script>
+
+<script src="https://unpkg.com/webamp"></script>
+{# <script>
+    const app = document.getElementById("app")
+    const webamp = new Webamp();
+    webamp.renderWhenReady(app);
+</script> #}

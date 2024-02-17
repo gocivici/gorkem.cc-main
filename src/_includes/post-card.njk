@@ -1,0 +1,51 @@
+<div class="left-box">
+  <div class="window main-left">
+    <div class="title-bar">
+      <div class="title-bar-text">{{ blogPost.url }}</div>
+      <div class="title-bar-controls">
+        <!-- <button aria-label="Help"></button> -->
+        <button disabled aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+
+      <a href="{{ blogPost.url }}">
+        <div class="cardWrapper">
+          <div class="blogImage">
+            <img class="blogImageSmall" src="{{ blogPost.data.image }}" alt="{{ blogPost.data.imageAlt }}">
+          </div>
+
+          <div class="blogSummary">
+            <h4 class="blogCardTitle">
+              {{ blogPost.data.title }}
+            </h4>
+            <div class="dateSection">
+              <small class="dateString">
+                <strong>Published:</strong>
+                {{ blogPost.data.created }}</small>
+            </div>
+            <p class="summaryText">{{ blogPost.data.summary }}</p>
+            <button id="readMore">Read more +</button>
+          </div>
+
+        </div>
+
+        {# <div class="project-card__body">
+    <div class="projectTagRow">
+      {% for tag in blogPost.data.tech %}
+        <span class="contentTag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <h4 class="projectCardTitle">
+      {{ blogPost.data.title }}
+    </h4>
+    <p class="project-card__summary">{{ project.data.summary }}</p>
+    
+  </div> #}
+
+      </a>
+
+    </div>
+  </div>
+
+</div>

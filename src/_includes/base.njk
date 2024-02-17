@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="icon" type="image/gif" href="favicon.gif">
+
+  <link rel="stylesheet" href="{{'/css/custom98.css' | url | safe}}">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/98.css"> -->
+  <link rel="stylesheet" href="{{'/css/style.css' | url | safe}}">
+  <link rel="stylesheet" href="{{'/css/scanlines.css' | url | safe}}">
+
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
+  <script type="text/javascript" src="/figlet.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <div id="container">
+    <div class="headerContainer">
+    <div class="scanlines">
+      <div class="screen">
+      <!-- <div class="asciiArt">Görkem's Webspace</div> -->
+      <div class="asciiArt">{{header}}</div>
+      <script>
+        figlet.defaults({ fontPath: "/css" });
+        ascii = document.getElementsByClassName("asciiArt");
+
+        figlet(ascii[0].innerText, "big", function (err, text) {
+          if (err) {
+            console.log("something went wrong...");
+            console.dir(err);
+            return;
+          }
+          console.log(text);
+          ascii = document.getElementsByClassName("asciiArt");
+          console.log(ascii);
+          ascii[0].innerText = text;
+        });
+
+      </script>
+
+      <!-- <div class="asciiArt">  _____ _   _      _                  _      __          __  _                              
+ / ____(_) (_)    | |                ( )     \ \        / / | |                             
+| |  __  ___  _ __| | _____ _ __ ___ |/ ___   \ \  /\  / /__| |__  ___ _ __   __ _  ___ ___ 
+| | |_ |/ _ \| '__| |/ / _ \ '_ ` _ \  / __|   \ \/  \/ / _ \ '_ \/ __| '_ \ / _` |/ __/ _ \
+| |__| | (_) | |  |   <  __/ | | | | | \__ \    \  /\  /  __/ |_) \__ \ |_) | (_| | (_|  __/
+ \_____|\___/|_|  |_|\_\___|_| |_| |_| |___/     \/  \/ \___|_.__/|___/ .__/ \__,_|\___\___|
+                                                                      | |             v1.2.1
+</div> -->
+</div>
+
+      <!-- <div id="header" style=" height: 130px; background-position: center center;"></div> -->
+      <div id="headerArea">
+
+        <nav id="navbar" style="">
+          <ul>
+
+            <li><button onclick="location.href='/index';" class="{{ 'active' if page.url == '/' }}"><img class="icon"
+                  style="vertical-align: middle;" src="/images/icons/address_book_home.png"></img>
+                <h4>Home</h4>
+              </button></li>
+            <li><button onclick="location.href='/projects';" class="{{ 'active' if '/projects' in page.url }}"><img
+                  class="icon" style="vertical-align: middle;" src="/images/icons/defragment-0.png"></img>
+                <h4>Projects</h4>
+              </button></li>
+            <li><button onclick="location.href='/blog';" class="{{ 'active' if '/blog' in page.url }}"><img class="icon"
+                  style="vertical-align: middle; filter: grayscale(100%);"
+                  src="/images/icons/address_book_pad_users.png"></img>
+                <h4>Blog</h4>
+              </button></li>
+            <li><button disabled onclick="javascript:location.href='http://cafe.gorkem.cc'"><img class="icon"
+                  style="vertical-align: middle;" src="/images/icons/network_cool_two_pcs-5.png"></img>
+                <h4>Café</h4>
+              </button></a></li>
+            <!-- <li><a href="#"><button><img class="icon" style="vertical-align: middle;" src="./icons/tools_gear-0.png"></img><h4>DIY</h4></button></a></li> -->
+            <li><button disabled onclick="location.href='/about';" class="{{ 'active' if '/about' in page.url }}"><img
+                  class="icon" style="vertical-align: middle;" src="/images/icons/help_sheet-0.png"></img>
+                <h4>About</h4>
+              </button></li>
+            <li><a href="#"><button disabled><img class="icon" style="vertical-align: middle; filter: grayscale(100%);"
+                    src="/images/icons/internet_connection_wiz-0.png"></img>
+                  <h4>Library</h4>
+                </button></a></li>
+
+            <li><a href="#"><button disabled><img class="icon" style="vertical-align: middle; filter: grayscale(100%);"
+                    src="/images/icons/expand_hierarchial_array-0.png"></img>
+                  <h4>Sitemap</h4>
+                </button></a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+    {{ content | safe}}
+
+    <footer id="footer" style="margin-top: 10px;"><img src="/images/icons/www.gif"></img></footer>
+
+  </div>
+  <!-- THIS IS THE CSS !-->
+
+
+
+</body>
+
+</html>
