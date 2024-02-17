@@ -70,7 +70,7 @@ and then link it! Many fonts have separate files for each style
 
     @font-face {
         font-family: asciiFont;
-        src: url(./CONSOLA.ttf);
+        src: url(./CONSOLA.TTF);
         font-style: normal;
         
     }
