@@ -13,17 +13,14 @@ tech:
 siteUrl: "#"
 repoUrl: "#"
 ---
+## Introduction {.invisible}
 
 https://www.youtube.com/watch?v=24zeD8yWEug
 
 
 
 
-<div style="display:none">
 
-## Introducion 
-
-</div>
   
 
 Happy Halloween!

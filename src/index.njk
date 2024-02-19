@@ -14,7 +14,7 @@ layout: "base.njk"
 <!-- <div class="box">
 
                     </div> -->
-<div id="app"></div>
+
 <!-- </aside> -->
 <div id="flex">
     <div class="left-box">
@@ -33,9 +33,8 @@ layout: "base.njk"
                     <main>
 
                         <h3>Welcome!</h3>
-                        <p>I'm Görkem and this is my little corner on the internet where I share my thoughts, experiments, <a href="./projects">projects</a>, and whatever else I feel like putting here!</p>
-                        <p>It's not much here yet, but check back later and hopefully things will grow with time.</p>
-                        <p>this site looks best on desktop, but should still be compatible with most mobile screens</p>
+                        <p>I'm Görkem and this is my corner on the internet where I share my thoughts, experiments, <a href="./projects">projects</a>, and whatever else I feel like putting here!</p>
+                        <p>There isn't much here yet but i'm always working on my projects, check back later and hopefully things will grow with time. Have fun looking around!</p>
 
                         {# <p>Integer condimentum tempor leo ut tincidunt. Praesent viverra ante ornare, hendrerit dui quis, scelerisque urna. Suspendisse ut dui vehicula, faucibus dui et, sodales lorem. In neque sem, feugiat sed elit id, fermentum viverra nibh. Quisque mauris felis, consequat vitae tincidunt sed, imperdiet at nulla. Maecenas gravida, nibh quis vestibulum iaculis, nisi ex mollis elit, a vehicula purus nulla eu leo. Nulla nec mollis erat.</p> #}
 
@@ -62,6 +61,14 @@ layout: "base.njk"
             <div class="window-body">
                 <div class=" updatesBox">
                     <main style="margin-top: 0px;">
+                        
+                        <p>
+                            <strong>February 19th, 2024</strong>
+                            <ul>
+                                <li>Finally published the website online! I also wrote a <a href="./blog/19-02-2024/"> short blog post</a> detailing the process.</li>
+                            </ul>
+                        </p>
+                        <hr>
                         <p>
                             <strong>February 10th, 2024</strong>
                             <ul>
@@ -87,14 +94,6 @@ layout: "base.njk"
                         <p>
                             <strong>January 7th, 2024</strong><br>This is an update test!</p>
                         <hr>
-                        <p>January 7th, 2024<br>This is an update test!</p>
-                        <p>08/09/2023<br>This is an update test!</p>
-
-                        <p>08/09/2023<br>This is an update test!</p>
-                        <p>08/09/2023<br>This is an update test!</p>
-                        <p>08/09/2023<br>This is an update test!</p>
-                        <p>08/09/2023<br>This is an update test!</p>
-                        <p>08/09/2023<br>This is an update test!</p>
 
                     </main>
                 </div>
@@ -102,9 +101,10 @@ layout: "base.njk"
         </div>
 
         <div class="window main-left bottomWindowStatus">
+            {# <div id="app"></div> #}
             <div class="title-bar grey">
                 
-                <div class="title-bar-text">Recent Activity </div>
+                <div class="title-bar-text">Recent Activity.exe </div>
                 <div class="title-bar-controls">
                     <div class="info-bubble">This window uses a free RSS feed scraper called politepol with javascript to update feeds. </div>
                     <button id="Recent" aria-label="Help" onClick="toggleBubble(this)"></button>
@@ -200,7 +200,7 @@ layout: "base.njk"
                 </aside>
             </div>
         </div>
-        <div class="window main-right">
+        <div id="moon" class="window main-right">
             <div class="title-bar inactive">
                 <div class="title-bar-text">Moon.exe</div>
                 <div class="title-bar-controls">
@@ -219,7 +219,7 @@ layout: "base.njk"
             </div>
         </div>
 
-        <div class="window main-right">
+        <div id="visitorCount" class="window main-right">
             <div class="title-bar inactive">
                 <div class="title-bar-text">VisitorCounter.exe</div>
                 <div class="title-bar-controls">
@@ -230,7 +230,7 @@ layout: "base.njk"
             <div class="window-body" >
                 <aside id="rightSidebar" style="text-align: center;">
 
-                    <a href="https://www.cutercounter.com/"><img src="https://www.cutercounter.com/hits.php?id=hxodcxx&nd=6&style=22" border="0" alt="website counter"></a>
+                    <a href="https://www.cutercounter.com/"><img src="https://www.cutercounter.com/hits.php?id=hxodcxx&nd=6&style=23" border="0" alt="website counter"></a>
 
                 </aside>
             </div>
@@ -238,7 +238,7 @@ layout: "base.njk"
 
         <div class="window main-right">
             <div class="title-bar inactive">
-                <div class="title-bar-text">ThemeChanger.exe</div>
+                <div class="title-bar-text">BackgroundChanger.exe</div>
                 <div class="title-bar-controls">
                     <button aria-label="Help"></button>
                     <!-- <button aria-label="Close"></button> -->
@@ -249,7 +249,7 @@ layout: "base.njk"
 
                     
                     <div class="field-row">
-                        <input checked id="theme-switch1" type="radio" name="theme-switch" onClick="changeBackground('1')">
+                        <input id="theme-switch1" type="radio" name="theme-switch" onClick="changeBackground('1')">
                         <label for="theme-switch1">Green Tile</label>
                     </div>
                     <div class="field-row">
@@ -257,7 +257,7 @@ layout: "base.njk"
                         <label for="theme-switch2">Silent Hill 3</label>
                     </div>
                     <div class="field-row">
-                        <input id="theme-switch3" type="radio" name="theme-switch" onClick="changeBackground('3')">
+                        <input checked id="theme-switch3" type="radio" name="theme-switch" onClick="changeBackground('3')">
                         <label for="theme-switch3">Stars</label>
                     </div>
                      <div class="field-row">
@@ -293,8 +293,8 @@ layout: "base.njk"
 
 <script src="./custom.js"></script>
 
-<script src="https://unpkg.com/webamp"></script>
-{# <script>
+{# <script src="https://unpkg.com/webamp"></script>
+<script>
     const app = document.getElementById("app")
     const webamp = new Webamp();
     webamp.renderWhenReady(app);

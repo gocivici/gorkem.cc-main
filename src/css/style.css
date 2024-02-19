@@ -111,6 +111,7 @@ html{
     body {
         height: 100%;
         font-family:IBM;
+        line-height: 1.5;
         /* font-family: 'Open Sans', sans-serif; */
         margin: 0;
         background-color: #08031A; 
@@ -193,28 +194,35 @@ html{
         margin-top: 0px;
     }
 
+    .project ul{
+        padding-left: 30px;
+    }
+
     .project img{
         width: 100%;
         /* padding-left: 50px;
         padding-right: 50px; */
     }
     .project .imageSlides img{
-        padding-left: 50px;
-        padding-right: 50px;
+        /* padding-left: 50px;
+        padding-right: 50px; */
     }
     .project .splide__arrow--next {
-        right: 0em;
+        right: 1em;
     }
     .project .splide__arrow--prev {
-        left: 0em;
+        left: 1em;
     }
 
     .project .imageSlides{
-        margin-top: 40px;
+        margin: 30px 0 0 0;
     }
 
 
-
+    .invisible{
+        visibility: hidden;
+        position: absolute;
+    }
 
     .warning{
         background-color: #4D3800;
@@ -280,7 +288,7 @@ html{
 
     .project__heading{
         padding-top: 30px;
-        margin-bottom: 0px !important;
+        margin-bottom: 10px !important;
     }
     .topHeader{
         margin-bottom: 30px;
@@ -295,26 +303,27 @@ html{
     }
     .project :is(h1, h2, h3, h4, h5) {
         /* all:initial; */
-        margin: .25em 0 1.5em;
+        line-height: 1.1;
+        margin-block-end: 0.65em;
         /* font-family: 'Open Sans', sans-serif; */
         font-family: IBM;
         font-weight: 500;
-        line-height: 1.5;
+        /* line-height: 1.5; */
         /* color:white; ; */
       }
 
       .project h1 {
         margin-top: 0;
-        font-size: 2.49rem;
+        font-size: 2.441rem;
       }
       
       /* .project h2 {font-size: 1.842rem;margin-bottom:18px;margin-top:54px;} */
-      .project h2 {font-size: 2rem;margin-bottom:18px;margin-top:54px;}
+      .project h2 {font-size: 1.953rem;margin-top: 2em;text-align: center;}
       
       /* .project h3 {font-size: 1.63rem;} */
-      .project h3 {font-size: 1.63rem; margin-bottom:12px;margin-top:48px; color:#DBDBDB; text-shadow: none; }
+      .project h3 {font-size: 1.563rem;margin-top: 1.5em; color:#DBDBDB; text-shadow: none; }
       
-      .project h4 {font-size: 1.443rem;margin-bottom:4px;margin-top:32px; display: block;}
+      .project h4 {font-size: 1.25rem; display: block;}
       
       .project h5 {font-size: 1.277rem;}
       
@@ -395,7 +404,7 @@ text-decoration:none; */
     }
     .asciiArt{
         /* all: initial; */
-        
+        line-height: 1.2;
 		width: 100%;
 		height: 150px;
 		background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png');
@@ -597,7 +606,7 @@ you can add them directly to the <div id="header"></div> element! */
     }
     .updatesBox{
         font-size: 16px;
-        height: 360px;
+        height: 465px;
         overflow-y: scroll;
     }
     .updatesBox ul{
@@ -694,6 +703,7 @@ between the sidebars! */
         padding-left: 5px;
         
     }
+
     .projectTagRowTitle{
         bottom: 5px;
         padding-top: 0px;
@@ -847,6 +857,7 @@ between the sidebars! */
     }
     .galleryContainer a{
         color:white !important;
+        text-shadow: none !important;
     }
     .projectCardTitle{
         padding-left: 10px;
@@ -873,7 +884,7 @@ between the sidebars! */
       }
 
       ol {
-        padding-inline-start:15px;
+        padding-left:30px;
       }
     /* what's this "order" stuff about??
 allow me to explain!
@@ -942,6 +953,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     .bottomWindowUpdates{
         width: 50%;
         float: left;
+
     }
     .bottomWindowStatus{
         width: 48%;
@@ -1051,6 +1063,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     }
 
     #statuscafe-content {
+        padding-left:8px ;
         /* margin: 0 1em 0.5em 1em; */
     }
 
@@ -1078,13 +1091,14 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 
     .blogSummary{
         flex: 1;
-        min-height:170px;
+        height: 150px;
         overflow: hidden;
         color: white;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
+        text-shadow: none;
     }
 .categoryBox{
     order:2;
@@ -1098,37 +1112,57 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     }
 
     .blogSummary .dateString{
-        font-size: 14px;
+        font-size: 12px;
+        font-family: -apple-system, -apple-system,  
+        BlinkMacSystemFont, 'Segoe UI', Roboto,  
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',  
+        'Helvetica Neue', sans-serif;
     }
 
     .blogSummary h4{
+       
         padding-left: 0px;
-        font-size: 1.5rem
+        font-size: 1.5rem;
+        color:#f9bc60;
+        text-shadow: 1px 1px 4px #ff8000;
+        line-height: 1.2;
+
     }
 
-    .blogSummary > button{
+    .blogTextContainer > button{
         font-size: 12px;
         width: initial;
         padding: 5px 5px;
+        margin-left: 20px;
+        margin-top: 10px;
         /* display: inline; */
         /* margin-top: 10px; */
         vertical-align: middle;
         /* margin-right: 5px; */
         height: initial;
+        bottom: 5px;
         /* float: right; */
         /* padding: 1px 2px; */
         /* all:initial; */
     }
+    .blogTextContainer{
+        flex: 1;
+    }
 
     .blogSummary .dateSection{
         margin-top: 0px;
+        color: #A3A3A3 !important;
     }
 
     .summaryText{
-        height: 59px;
+        max-height: 69px;
         overflow: hidden;
-        
+        font-family: -apple-system, -apple-system,  
+        BlinkMacSystemFont, 'Segoe UI', Roboto,  
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',  
+        'Helvetica Neue', sans-serif;
         text-overflow: ellipsis;
+        font-size: 15px;
     }
 
     /* CSS for extras */
@@ -1243,10 +1277,22 @@ and then subtrack it by 100. use this new number as the
             width: 100%;
             padding: 10px 5px 0px 5px;
         }
+        .right-box{
+            padding: 10px 40px 0px 40px;
+        }
+        .project{
+            font-size: 16px;
+        }
         .window{
             width: 100%;
             margin-left: 0px;
             
+        }
+        #moon{
+            display: none;
+        }
+        #visitorCount{
+            display:none;
         }
         .categoryBox{
             order:1;
@@ -1344,5 +1390,14 @@ and then subtrack it by 100. use this new number as the
         }
         :root{
         --theme-3: url('/images/carpet.JPG');
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+
+        .asciiArt{
+            font-size: 6.5px;
+            height: 65px;
+            padding: 0;
         }
     }

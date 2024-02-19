@@ -1,7 +1,7 @@
 const anchors = document.querySelectorAll('h2');
 const links = document.querySelectorAll('ul > ul > li');
-console.log(anchors);
-console.log(links);
+// console.log(anchors);
+// console.log(links);
 window.addEventListener('scroll', (event) => {
   if (typeof(anchors) != 'undefined' && anchors != null && typeof(links) != 'undefined' && links != null) {
     let scrollTop = window.scrollY;
@@ -47,7 +47,7 @@ function changeBackground(value)
 //info bubble toggle
 
 function toggleBubble(x){
-	console.log(x.parentElement.parentElement.children[0]);
+	// console.log(x.parentElement.parentElement.children[0]);
 	x.parentElement.children[0].style.visibility = x.parentElement.children[0].style.visibility == "visible" ? "hidden" : "visible";
 }
 
@@ -60,7 +60,7 @@ var simpleRSSPlugin = (function() {
 	// get all the feed containers
 	var feedsNodes = document.querySelectorAll('[data-rss-feed]');
 	// Convert to array
-	console.log(feedsNodes);
+	// console.log(feedsNodes);
 	var feeds = [].slice.call(feedsNodes);
 	for (var i = 0; i < feeds.length; i++) {
 		var container = feedsNodes[i];
@@ -79,7 +79,7 @@ var simpleRSSPlugin = (function() {
 		script.src = document.location.protocol + '//api.rss2json.com/v1/api.json?callback=simpleRSSPlugin.handleJSON&rss_url=' + encodeURIComponent(url);
 		script.async=false // load in order not dynamically
 		document.querySelector('head').appendChild(script);
-		console.log(script);
+		// console.log(script);
 		
 		// Remove script
 		script.parentNode.removeChild(script);
@@ -89,11 +89,11 @@ var simpleRSSPlugin = (function() {
     var dates = [];
 	function handleJSON(data) {
 		if (data.feed && data.items) {
-			console.log(data);
+			// console.log(data);
 			var docFrag = document.createDocumentFragment();
 			for (var i = 0; i < data.items.length; i++) {
 				var e = data.items[i];
-				console.log(data.items[i]);
+				// console.log(data.items[i]);
 				var tempNode = document.createElement('div');
                 dates[i] = new Date(e.pubDate);
                 

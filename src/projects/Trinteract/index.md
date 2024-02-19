@@ -12,14 +12,15 @@ tech:
 siteUrl: "#"
 repoUrl: "#"
 ---
+## Introducion {.invisible}
 
 https://www.youtube.com/watch?v=YoGgdORVARs
 
-<!-- <div style="display:none">
+<!-- <div style="display:none"></div> -->
 
-## Introducion 
 
-</div> -->
+
+
 
 📝**NOTE**
 You can keep track of the components with [this interactive guide](ibom.html) {.note}

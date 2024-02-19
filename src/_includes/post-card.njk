@@ -14,17 +14,29 @@
           <div class="blogImage">
             <img class="blogImageSmall" src="{{ blogPost.data.image }}" alt="{{ blogPost.data.imageAlt }}">
           </div>
-
+          <div class="blogTextContainer">
           <div class="blogSummary">
             <h4 class="blogCardTitle">
               {{ blogPost.data.title }}
             </h4>
-            <div class="dateSection">
+            {# <hr> #}
+                        <div class="dateSection">
+              <small class="dateString">
+                 by Görkem
+
+                </small> 
+                
+            </div>
+            {# <div class="dateSection">
               <small class="dateString">
                 <strong>Published:</strong>
-                {{ blogPost.data.created }}</small>
-            </div>
+                {{ blogPost.data.created }}
+
+                </small> 
+                
+            </div> #}
             <p class="summaryText">{{ blogPost.data.summary }}</p>
+            </div>
             <button id="readMore">Read more +</button>
           </div>
 
