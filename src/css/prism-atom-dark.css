@@ -40,9 +40,14 @@ pre[class*="language-"] {
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+:not(pre) > code {
+	font-family: win98;
+	background-color:hsla(0,0%,100%,.1) ;
+    padding: 0px .3rem;
+    border: .1rem solid rgba(0,0,0,.1);
+	/* padding: .1em;
+	border-radius: .3em; */
+	/* background: red; */
 }
 
 .token.comment,

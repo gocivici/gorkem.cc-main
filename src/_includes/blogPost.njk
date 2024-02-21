@@ -1,9 +1,10 @@
 ---
 layout: "base.njk"
-header: "Personal Blog"
+header: "Personal Blog     ("
 ---
 
-<link rel="stylesheet" href="/css/prism-pojoaque.css"/>
+<link rel="stylesheet" href="/css/prism-atom-dark.css"/>
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 <div id="flex">
     <div class="left-box">
         <div class="window main-left">
@@ -26,8 +27,10 @@ header: "Personal Blog"
                             <div class="dateSection">
                                 <small class="dateString">
                                     <strong>Created:</strong>
-                                    {{ created }} | <strong>Updated:</strong>
+                                    {{ created | postDate }} | <strong>Updated:</strong>
                                     {{ page.date | postDate }}</small>
+
+                                     
                             </div>
                         </div>
                         <div class="project__image-wrapper">
@@ -74,3 +77,6 @@ header: "Personal Blog"
 
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="/splide-init.js"></script>

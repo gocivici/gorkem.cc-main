@@ -318,7 +318,7 @@ html{
       }
       
       /* .project h2 {font-size: 1.842rem;margin-bottom:18px;margin-top:54px;} */
-      .project h2 {font-size: 1.953rem;margin-top: 2em;text-align: center;}
+      .project h2 {font-size: 1.953rem;margin-top: 1em;padding-top:1em;text-align: center; border-top: dashed grey 1px;}
       
       /* .project h3 {font-size: 1.63rem;} */
       .project h3 {font-size: 1.563rem;margin-top: 1.5em; color:#DBDBDB; text-shadow: none; }
@@ -360,7 +360,30 @@ html{
 to uncomment a line of CSS, remove the * and the /
 before and after the text */
 
+.guestBook{
+    width: 100%;
+    
+}
 
+.guestBook p{
+    font-size: 16px;
+}
+
+.guestBook img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.guestBook u{
+    text-decoration: underline;
+}
+
+.guestBook iframe{
+    width: 100%;
+    height: 1000px; 
+}
     /* the "container" is what wraps your entire website */
     /* if you want something (like the header) to be Wider than
 the other elements, you will need to move that div outside
@@ -1099,6 +1122,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
         padding-top: 10px;
         padding-bottom: 10px;
         text-shadow: none;
+        text-overflow: ellipsis;
     }
 .categoryBox{
     order:2;
@@ -1155,12 +1179,13 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     }
 
     .summaryText{
-        max-height: 69px;
+        height: auto;
         overflow: hidden;
         font-family: -apple-system, -apple-system,  
         BlinkMacSystemFont, 'Segoe UI', Roboto,  
         Oxygen, Ubuntu, Cantarell, 'Open Sans',  
         'Helvetica Neue', sans-serif;
+        /* white-space: nowrap; */
         text-overflow: ellipsis;
         font-size: 15px;
     }
