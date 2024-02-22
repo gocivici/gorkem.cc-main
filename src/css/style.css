@@ -380,9 +380,17 @@ before and after the text */
     text-decoration: underline;
 }
 
+.iframeWrapper{
+    padding: 0; 
+    overflow: hidden;
+    width: 100%;
+}
+
 .guestBook iframe{
+
     width: 100%;
     height: 1000px; 
+
 }
     /* the "container" is what wraps your entire website */
     /* if you want something (like the header) to be Wider than
@@ -457,7 +465,7 @@ text-decoration:none; */
         white-space: pre;
         font-family: asciiFont; 
         font-size: 17px;
-        font-weight: bold;
+        /* font-weight: bold; */
         /* padding-top:10px ; */
         padding-bottom:10px ;
         color: #f9bc60;
@@ -1300,10 +1308,17 @@ and then subtrack it by 100. use this new number as the
         }
         .left-box{
             width: 100%;
-            padding: 10px 5px 0px 5px;
+            /* padding: 10px 5px 0px 5px; */
+            
         }
-        .right-box{
-            padding: 10px 40px 0px 40px;
+
+        
+        .headerContainer{
+            margin-bottom: 10px;
+        }
+
+        .project .left-box{
+            padding:0;
         }
         .project{
             font-size: 16px;
@@ -1311,6 +1326,23 @@ and then subtrack it by 100. use this new number as the
         .window{
             width: 100%;
             margin-left: 0px;
+        }
+
+        .homeContainer .window{
+            padding: 3px;
+
+        }
+
+        .homeContainer .left-box{
+            
+            padding: 0px 8px 0px 8px;
+            
+        }
+
+        .projectContainer .window{
+            width: 100%;
+            margin-left: 0px;
+            padding: 3px 0px 0px 0px;
             
         }
         #moon{
@@ -1323,9 +1355,13 @@ and then subtrack it by 100. use this new number as the
             order:1;
             width: 100%;
             text-align: center;
-            margin-top: 10px;
+            display: none;
+            /* margin-top: 10px; */
 
         }
+
+
+
         .categoryBox li{
             /* list-style-type: none; */
             display: inline;
@@ -1342,8 +1378,9 @@ and then subtrack it by 100. use this new number as the
             order:2;
         }
         .right-box{
-            width:100%;
-            margin-left: 0px;
+            width:210px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .window.main-left.bottomWindowStatus{
@@ -1413,9 +1450,42 @@ and then subtrack it by 100. use this new number as the
             display: none;
             width: 150px;
         }
-        :root{
-        --theme-3: url('/images/carpet.JPG');
+        #readMore{
+            /* display: none; */
+            margin-bottom: 10px;
+            /* margin-left: auto; */
+            /* margin-right: 10px; */
         }
+        h4.blogCardTitle{
+            font-size: 1.4rem;
+        }
+
+        .blogSummary{
+            height: 190px;
+        }
+        .cardWrapper{
+            height: auto;
+        }
+        .summaryText{
+            /* display: none; */
+        }
+
+        .guestBook iframe{
+            width: 130vw;
+            /* overflow: hidden; */
+            -ms-zoom: 0.75;
+            -moz-transform: scale(0.75);
+            -moz-transform-origin: 0 0;
+            -o-transform: scale(0.75);
+            -o-transform-origin: 0 0;
+            -webkit-transform: scale(0.75);
+            -webkit-transform-origin: 0 0;
+        
+        }
+
+        /* :root{
+        --theme-3: url('/images/carpet.JPG');
+        } */
     }
 
     @media only screen and (max-width: 400px) {
