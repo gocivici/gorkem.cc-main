@@ -111,7 +111,7 @@ html{
     body {
         height: 100%;
         font-family:IBM;
-        line-height: 1.5;
+        /* line-height: 1.5; */
         /* font-family: 'Open Sans', sans-serif; */
         margin: 0;
         background-color: #08031A; 
@@ -465,7 +465,8 @@ text-decoration:none; */
         white-space: pre;
         font-family: asciiFont; 
         font-size: 17px;
-        /* font-weight: bold; */
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
         /* padding-top:10px ; */
         padding-bottom:10px ;
         color: #f9bc60;
@@ -1433,6 +1434,7 @@ and then subtrack it by 100. use this new number as the
             font-size: 8px;
             height: 80px;
             padding: 0;
+            display: none;
         }
 
         .project-list{
