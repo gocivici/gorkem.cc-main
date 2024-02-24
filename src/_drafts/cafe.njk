@@ -1,0 +1,73 @@
+---
+title: "Interweb Cafe"
+header: "CyberCafe   #  *"
+layout: "base.njk"
+---
+<link rel="stylesheet" href="/css/prism-atom-dark.css"/>
+ <link rel="stylesheet" href="/css/cafe.css">
+            <div class="tooltip" role="tooltip">
+                <emoji-picker></emoji-picker>
+              </div>
+<div id="flex">
+  <div class="loungeContainer">
+    <div class="window main-left">
+      <div class="title-bar">
+        <div class="title-bar-text">Lounge.exe</div>
+        <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+
+        <main>
+          <canvas id="canvas"></canvas>
+
+          <!-- <canvas id="canvas"></canvas> -->
+
+          <form id="textInput" action="" >
+            <div class="inputWrapper">
+              <input placeholder="Say something" maxlength="20" required="required" id="input" autocomplete="off"/><button type="button" id="emojiButton">🙂</button>
+            </div>
+            <button id="messageButton">Send</button>
+          </form>
+
+        </main>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="loungeText">
+    <div class="window main-right">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">Instructions.txt</div>
+        <div class="title-bar-controls">
+          <button aria-label="Help"></button>
+
+        </div>
+      </div>
+      <div class="window-body">
+        <aside id="rightSidebar">
+ <ul>
+  <li>Click anywhere in the box to <strong>move</strong></li>
+  <li>Write <code>/name</code> followed by your name in the text box to <strong>change your name</strong></li>
+  <li>Use the textbox to <strong>chat</strong> and the emoji button to send <strong>emojis</strong></li>
+  <li>Be nice & Have fun!</li>
+   <div class="credits"> Dino sprites by <a href="https://arks.itch.io/dino-characters" target="_blank">@ScissorMarks</a> </div>
+</ul> 
+
+        </aside>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+<script src="./classes/Sprite.js"></script>
+<script src="./classes/Player.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+<script type="module" src="popup.js"></script>
+<script src="index.js"></script>

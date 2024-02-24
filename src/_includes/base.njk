@@ -75,9 +75,14 @@
                   src="/images/icons/newspaper.png"></img>
                 <h4>Blog</h4>
               </button></li>
-            <li><button disabled onclick="javascript:location.href='http://cafe.gorkem.cc'"><img class="icon"
-                  style="vertical-align: middle;filter: grayscale(100%);" src="/images/icons/network_cool_two_pcs-5.png"></img>
+            <li>
+              <img src="/images/new2.gif" style="position:absolute; width:30px;bottom:12px;"></img>
+              <button onclick="javascript:location.href='http://cafe.gorkem.cc'" class="{{ 'active' if '/cafe' in page.url }}">
+            
+            <img class="icon"
+                  style="vertical-align: middle;" src="/images/icons/network_cool_two_pcs-5.png"></img>
                 <h4>Café</h4>
+                
               </button></a></li>
             <!-- <li><a href="#"><button><img class="icon" style="vertical-align: middle;" src="./icons/tools_gear-0.png"></img><h4>DIY</h4></button></a></li> -->
             <li><button disabled onclick="location.href='/about';" class="{{ 'active' if '/about' in page.url }}"><img
@@ -105,8 +110,9 @@
     </div>
     </div>
     {{ content | safe}}
+      {# <footer id="footer">Proud member</footer> #}
+    <footer id="footer"><img src="/images/icons/www.gif"></img></footer>
 
-    <footer id="footer" style="margin-top: 10px;"><img src="/images/icons/www.gif"></img></footer>
 
   </div>
   <!-- THIS IS THE CSS !-->

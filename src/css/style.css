@@ -943,6 +943,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
         /* background color for footer */
         width: 100%;
         /* height: 40px; */
+        margin-top: 20px;
         padding: 10px;
         text-align: center;
         /* this centers the footer text */
@@ -1224,7 +1225,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
       }
 
       .commentWrapper{
-        width: 786px;
+        width: 775px;
         background-color: rgba(0, 0, 0, 0.415);
         -webkit-backdrop-filter: blur(16px);
         backdrop-filter: blur(16px);
