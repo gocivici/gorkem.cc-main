@@ -96,9 +96,16 @@ and then link it! Many fonts have separate files for each style
         
     }
 
-    @font-face {
+    /* @font-face {
         font-family: IBM;
         src: url(./IBMvga.woff);
+        font-style: normal;
+        
+    } */
+
+    @font-face {
+        font-family: IBM;
+        src: url(./Web437_NEC_APC3_8x16.woff);
         font-style: normal;
         
     }
@@ -263,7 +270,7 @@ html{
 .thumbnails {
     display: flex;
     margin: 1rem auto 0;
-    padding: 0;
+    padding: 0 !important;
     justify-content: center;
   }
   
@@ -536,7 +543,7 @@ you can add them directly to the <div id="header"></div> element! */
     }
 
     .right-box{
-        width: 210px;
+        width: 220px;
         /* background-color: #15223857; */
         /* background-color: #152238; */
         margin-left: 20px;
@@ -684,6 +691,14 @@ padding: 10px;
 
     .aboutMe, .aboutPage{
         width: 50%;
+    }
+
+    .aboutMe{
+        padding-right: 10px;
+    }
+
+    .aboutPage{
+        padding-left: 10px;
     }
     /* .tocNavigation{
         max-height: 200px;
@@ -879,6 +894,33 @@ between the sidebars! */
 
     }
 
+    .myButton{
+        /* padding: 10px; */
+        text-align: center;
+
+    }
+    .myButton img{
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .myButton p{
+        margin:10px 0px 5px 0px;
+    }
+ 
+    .copyButton{
+        width: 80px;
+        height: 31px;
+        font-size: 9px;
+        color: #e9e4de;
+        background-color: rgb(40, 40, 40);
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        
+    }
+    .copyBox::-webkit-scrollbar {
+        display: none;
+      }
     .project-card:hover{
         /* background-color: #d27f26; */
 
@@ -1225,13 +1267,19 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
       }
 
       .commentWrapper{
+        
         width: 775px;
         background-color: rgba(0, 0, 0, 0.415);
         -webkit-backdrop-filter: blur(16px);
         backdrop-filter: blur(16px);
-        font-size: 17px;
+        font-size: 16px;
 
     }
+
+    .commentWrapper .window-body{
+        /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    }
+
     .commentWrapper main {
     padding-top: 10px;
 }
@@ -1250,6 +1298,9 @@ box-shadow: none !important;
     box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf !important;
     width: auto;
     }
+    .cactus-send-button:disabled{
+        color:grey;
+    }
 
     .cactus-editor-buttons .cactus-button:after{
         content: "‎ (Optional)";
@@ -1263,7 +1314,9 @@ box-shadow: none !important;
 }
 
 
-
+.cactus-comment-displayname{
+    font-weight: normal !important;
+}
 
 .activate a{
     color:white !important;
@@ -1379,11 +1432,11 @@ and then subtrack it by 100. use this new number as the
         .postCollection{
             order:2;
         }
-        .right-box{
+        /* .right-box{
             width:210px;
             margin-left: auto;
             margin-right: auto;
-        }
+        } */
 
         .window.main-left.bottomWindowStatus{
             margin-left: 0px;
@@ -1411,6 +1464,10 @@ and then subtrack it by 100. use this new number as the
 
         #rightSidebar {
             order: 3;
+        }
+
+        .TOCnav{
+            display:none;
         }
 
         #navbar h4 {

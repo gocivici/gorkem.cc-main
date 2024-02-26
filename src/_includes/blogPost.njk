@@ -78,5 +78,39 @@ header: "Personal Blog     ("
     </div>
 </div>
 
+<div class="left-box">
+<div class="window commentWrapper">
+  <div class="title-bar">
+      <div class="title-bar-text">Comments</div>
+      <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+  </div>
+<div class="window-body">
+  
+  <main>
+
+    <div id="comment-section"></div>
+      
+  </main>
+  
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+<link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+            <script>
+initComments({
+  node: document.getElementById("comment-section"),
+  defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+  serverName: "cactus.chat",
+  siteName: "<gorkem.cc>",
+  commentSectionId: "{{ page.url }}",
+  loginEnabled: "false",
+  guestPostingEnabled: "true"
+})
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="/splide-init.js"></script>
