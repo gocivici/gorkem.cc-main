@@ -128,7 +128,7 @@ html{
         /* background-size: cover; */
         color: #e9e4de;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), var(--theme-3);
-        /* background-image: var(--theme-3); */
+        /* background-image: var(--theme-1); */
         background-blend-mode: normal;
         /* filter: grayscale(100%); */
         /* font-smooth: always !important; */
@@ -325,10 +325,10 @@ html{
       }
       
       /* .project h2 {font-size: 1.842rem;margin-bottom:18px;margin-top:54px;} */
-      .project h2 {font-size: 1.953rem;margin-top: 1em;padding-top:1em;text-align: center; border-top: dashed grey 1px;}
+      .project h2 {font-size: 1.953rem; font-weight:700; margin-top: 1em;padding-top:1em;text-align: center; border-top: dashed grey 1px;}
       
       /* .project h3 {font-size: 1.63rem;} */
-      .project h3 {font-size: 1.563rem;margin-top: 1.5em; color:#DBDBDB; text-shadow: none; }
+      .project h3 { font-size: 1.563rem;margin-top: 1.5em; color:#DBDBDB; text-shadow: none; }
       
       .project h4 {font-size: 1.25rem; display: block;}
       
@@ -337,6 +337,10 @@ html{
       .project small, .text_small {font-size: 0.855rem;}
 
       .eleventy-plugin-youtube-embed{
+        margin-bottom: 1rem;
+      }
+
+      .eleventy-plugin-vimeo-embed {
         margin-bottom: 1rem;
       }
 
@@ -570,7 +574,7 @@ you can add them directly to the <div id="header"></div> element! */
     }
 
     .right-box{
-        width: 220px;
+        width: 290px;
         /* background-color: #15223857; */
         /* background-color: #152238; */
         margin-left: 20px;
@@ -632,6 +636,7 @@ you can add them directly to the <div id="header"></div> element! */
         line-height: 1.5;
         padding: 0px;
         margin: 0px;
+        /* font-size: 16px; */
         
         /* background-color: #000055a6; */
     }
@@ -672,11 +677,13 @@ you can add them directly to the <div id="header"></div> element! */
     }
     .updatesBox{
         font-size: 16px;
-        height: 465px;
+        height: 456px;
         overflow-y: scroll;
     }
     .updatesBox ul{
         padding-left: 15px;
+        margin-bottom: 0px;
+        
         margin-top: 0px;
         font-size: 14px;
     }
@@ -716,8 +723,12 @@ padding: 10px;
     }
 
 
-    .aboutMe, .aboutPage{
-        width: 50%;
+    .aboutMe{
+        width: auto;
+    }
+    
+    .aboutPage{
+        /* width: 80%; */
     }
 
     .aboutMe{
@@ -726,6 +737,88 @@ padding: 10px;
 
     .aboutPage{
         padding-left: 10px;
+    }
+
+    .aboutMeContainer{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 17px;
+    }
+
+    .aboutMeContainer main{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 200px;
+    }
+
+    .aboutPageContainer main{
+        /* width: 50%; */
+        /* display: flex;
+        flex-direction: row; */
+       
+            }
+
+    .aboutPageContainer ul{
+padding-left: 15px;
+    }
+    .aboutPageContainer li{
+        /* padding-top: 5px; */
+        padding-bottom: 10px;
+            }
+
+    .aboutMeContainer .aboutImagesContainer{
+        /* padding: 0px 10px 10px 0px; */
+        /* float:left; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* border-right: 2px solid white; */
+        /* display:none; */
+        margin-top: 17px;
+        height: 100%;
+        width: 140px;
+        text-align: center;
+        /* padding-left: 15px; */
+        margin: 10px;
+    }
+    .aboutImagesContainer img{
+        width: 100%;
+
+    }
+
+    .IPA{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    }
+
+    .aboutPageContainer h3{
+        /* text-align: center; */
+        /* writing-mode: vertical-lr; */
+        /* transform:scale(-1); */
+        font-family: NEC;
+
+
+        /* color: #e9e4de; */
+        /* text-shadow: none; */
+        font-weight: normal;
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+
+    .aboutPageContainer p{
+        margin-top: 8px;
+    }
+
+    .aboutImagesContainer a{
+        all: initial;
+    }
+
+    .aboutImagesContainer small{
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .aboutPageContainer{
+        font-size: 17px;
     }
     /* .tocNavigation{
         max-height: 200px;
@@ -756,6 +849,7 @@ between the sidebars! */
     .main-left{
         /* background-color: rgba(0, 0, 0, 0.45); */
         /* background-color: rgba(40, 40, 40, 0.555); */
+        position: relative;
         background-color: rgba(40, 40, 40, .7);
         -webkit-backdrop-filter: blur(64px);
         backdrop-filter: blur(64px);
@@ -927,18 +1021,22 @@ between the sidebars! */
 
     }
     .myButton img{
-        padding-right: 1px;
-        padding-left: 1px;
+        padding: 10px 0px 10px 0px;
     }
 
     .myButton p{
         margin:10px 0px 5px 0px;
     }
+
+    .allbuttons img{
+        padding:0px 2px 0px 2px;
+    }
  
     .copyButton{
-        width: 80px;
-        height: 31px;
-        font-size: 9px;
+        width: 160px;
+        height: 45px;
+        margin-bottom: 20px;
+        font-size: 12px;
         color: #e9e4de;
         background-color: rgb(40, 40, 40);
         -ms-overflow-style: none;  /* IE and Edge */
@@ -1066,6 +1164,9 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
         font-size: 10px;
         font-family: winReg;
         margin-left: -5px;
+    }
+    .activityBox{
+        height: 460px;
     }
 
     .activityBox legend {
@@ -1459,13 +1560,19 @@ and then subtrack it by 100. use this new number as the
         .postCollection{
             order:2;
         }
-        /* .right-box{
-            width:210px;
+        .right-box{
+            width:230px;
             margin-left: auto;
             margin-right: auto;
-        } */
+        }
 
         .window.main-left.bottomWindowStatus{
+            order:1;
+            margin-left: 0px;
+        }
+
+        .window.main-left.bottomWindowUpdates{
+            order:2;
             margin-left: 0px;
         }
 

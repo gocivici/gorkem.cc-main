@@ -6,18 +6,35 @@ layout: "base.njk"
 <div id="flex">
   <div class="left-box aboutMe">
     <div class="window main-left">
-      <div class="title-bar">
-        <div class="title-bar-text">Görkem.txt</div>
+      <div class="title-bar inactive">
+        <div class="title-bar-text">Webmaster.contact</div>
         <div class="title-bar-controls">
           <!-- <button aria-label="Help"></button> -->
           <button disabled aria-label="Close"></button>
         </div>
       </div>
-      <div class="window-body">
-        <main> 
-          <h3>Me</h3>
-          <p>lorem ipsum dor salamet managen</p>
-        </main>
+      <div class="window-body aboutMeContainer">
+        
+          {# <h3>Me</h3> #}
+          <div class="aboutImagesContainer">
+            
+<img src="/images/me.jpg"></img>
+<small>find me on:</small>
+<a href="https://instagram.com/gocivici"><img src="/images/insta.png"></img></a>
+<a href="https://twitter.com/gocivici"><img src="/images/twitter.png"></img></a>
+<a href="https://github.com/gocivici"><img src="/images/github.png"></img></a>
+<a href="https://open.spotify.com/user/11120064490?si=4bp_qQCJRV6NthSEan98Ng"><img src="/images/spoti.png"></img></a>
+<small>or email me at:</small>
+<small>gocivici[at]gmail.com</small>
+</div>
+
+
+{# <main> 
+
+
+
+        
+        </main> #}
       </div>
     </div>
 
@@ -25,16 +42,28 @@ layout: "base.njk"
 
     <div class="left-box aboutPage">
     <div class="window main-left">
-      <div class="title-bar">
-        <div class="title-bar-text">www.gorkem.cc</div>
+      <div class="title-bar grey">
+        <div class="title-bar-text">???????????????.txt</div>
         <div class="title-bar-controls">
           <!-- <button aria-label="Help"></button> -->
           <button disabled aria-label="Close"></button>
         </div>
       </div>
-      <div class="window-body">
+      <div class="window-body aboutPageContainer">
         <main> 
-          <h3>This website</h3>
+<h3>About me</h3>
+                     <ul>
+            <li>My name is Görkem: pronounced (<a class="IPA" href="http://ipa-reader.xyz/?text=%CB%88g%C3%B8%C9%BE%CB%88cem&voice=Filiz">/ˈgøɾˈkem/</a>)</li>
+            <li>I build stuff with electronics, primarily using salvaged items, with a focus on <a href="https://en.wikipedia.org/wiki/Retrofuturism">retrofuturism.</a></li>
+            <li>I'm an advocate for Open Source Software/Hardware, and I publish my works under open licenses (<a target="_blank" href="https://github.com/gocivici/gorkem.cc-main">this website included!</a>) </li>
+            <li>I have a backround in physics and interaction design, you can view my academic portfolio <a href="/portfolio/about">here.</a></li>
+          </ul> 
+          
+</main>
+<main>
+<h3>About the website</h3>
+          <p> <img src="/images/construction.gif"></img></p>
+        
         </main>
       </div>
     </div>

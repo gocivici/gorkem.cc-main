@@ -87,10 +87,12 @@
 }
 .cactus-editor > span {
   display: flex;
+  order: 2;
 }
 .cactus-editor-textarea {
   display: flex;
   flex: 1;
+  order: 2;
   height: 4rem;
   border-radius: var(--cactus-border-radius);
   border: solid var(--cactus-border-width) var(--cactus-border-color);
@@ -108,6 +110,7 @@
 }
 .cactus-editor-below {
   display: flex;
+  order: 1;
   flex-wrap: wrap;
   gap: 0.5em;
   justify-content: flex-end;
@@ -115,7 +118,7 @@
 .cactus-editor-name {
   display: flex;
   flex: 1;
-  order: 0;
+
 }
 .cactus-editor-name > span {
   display: flex;
