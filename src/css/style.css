@@ -115,6 +115,16 @@ html{
     /* position:relative; */
 }
 
+img{
+    /* image-rendering: optimizeSpeed;              */
+    /* image-rendering: -moz-crisp-edges;          
+    image-rendering: -o-crisp-edges;            
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: pixelated;                 
+    image-rendering: optimize-contrast;         
+    -ms-interpolation-mode: nearest-neighbor;                          */
+}
+
     body {
         height: 100%;
         font-family:IBM;
@@ -131,7 +141,9 @@ html{
         /* background-image: var(--theme-1); */
         background-blend-mode: normal;
         /* filter: grayscale(100%); */
-        /* font-smooth: always !important; */
+        font-smooth: never !important;
+        -webkit-font-smoothing: none;
+        -moz-osx-font-smoothing: none;
     }
     body img{
         filter: brightness(.9) contrast(1);
@@ -1210,6 +1222,14 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     padding:10px 20px 10px 20px ;
     text-align: center;
 
+    }
+
+    .booklog img{
+        width: auto !important;
+        max-height: 170px;
+    }
+    .gamelog img{
+        
     }
 
     .booklog p, .gamelog p{
