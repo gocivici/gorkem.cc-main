@@ -8,6 +8,7 @@ created: 2018-07-28
 type: "DIY Guide"
 tech:
   - "Arduino"
+  - "Kinetic"
   - "Clock"
 siteUrl: "#"
 repoUrl: "#"

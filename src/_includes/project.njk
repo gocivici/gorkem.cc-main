@@ -6,6 +6,27 @@ header: "DIY Projects     %"
 <link rel="stylesheet" href="/css/prism-atom-dark.css"/>
 <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+{% if custombg %}
+<style>
+body {
+         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url( {{ custombg }} );
+        /* background-image: var(--theme-1); */
+        background-blend-mode: normal;
+        /* filter: grayscale(100%); */
+        font-smooth: never !important;
+        -webkit-font-smoothing: none;
+        -moz-osx-font-smoothing: none;
+    }
+</style>
+
+{% else %}
+<script src="/bgswitch.js"></script>
+{% endif %}
+
 <div class="projectContainer" id="flex">        
         <div class="left-box">
                 <div class="window main-left">

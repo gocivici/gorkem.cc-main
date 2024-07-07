@@ -21,7 +21,7 @@ var simpleRSSPlugin = (function() {
 		var max = container.getAttribute('data-rss-max') || 10;
 		// Get data - append as script with callback to avoid CORS
 		var script = document.createElement('script');
-		script.src = document.location.protocol + '//api.rss2json.com/v1/api.json?callback=simpleRSSPlugin.handleJSON&rss_url=' + encodeURIComponent(url);
+		script.src = document.location.protocol + '//api.rss2json.com/v1/api.json?callback=simpleRSSPlugin.handleJSON&rss_url=' + encodeURIComponent(url) + '&api_key=kfgz8joqcdbangakoqrn9fwxth5wsj4tkaajrbaa';
 		script.async=false // load in order not dynamically
 		document.querySelector('head').appendChild(script);
 		// console.log(script);

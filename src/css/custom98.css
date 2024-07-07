@@ -25,7 +25,6 @@ input,
 label,
 option,
 select,
-table,
 textarea,
 ul.tree-view {
   /* -webkit-font-smoothing:none; */
@@ -673,16 +672,22 @@ menu[role=tablist].multirows>li {
 }
 .sunken-panel,
 table {
-  background-color:#fff
+  /* background-color:rgb(40, 40, 40); */
+  color: #e9e4de;
+}
+table, th, td{
+  border: 1px inset;
 }
 table {
-  border-collapse:collapse;
+  
+  width: 100%;
+  /* border-collapse:collapse; */
   position:relative;
-  text-align:left;
-  white-space:nowrap
+  text-align:center;
+  /* white-space:nowrap */
 }
 table>thead>tr>* {
-  background:silver;
+  background:#828282;
   box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
   box-sizing:border-box;
   font-weight:400;
