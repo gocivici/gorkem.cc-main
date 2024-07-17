@@ -236,6 +236,12 @@ img{
     .project .imageSlides{
         margin: 30px 0 0 0;
     }
+    
+    .project__content small{
+        display: block;
+        text-align: center;
+        color: rgb(180, 180, 180);
+    }
 
     .project table{
         font-size: 17px;
@@ -248,6 +254,10 @@ img{
     .project table td{
         /* font-size: 14px; */
         /* min-width: 200px; */
+    }
+
+    .hljs-ln{
+        text-align: left;
     }
 
     .invisible{

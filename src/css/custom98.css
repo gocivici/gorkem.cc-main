@@ -132,10 +132,15 @@ input[type=submit]:disabled {
   background:linear-gradient(90deg,#46171d,#6D2932);
 }
 .title-bar-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   color:#fff;
   font-weight:700;
   letter-spacing:0;
-  margin-right:24px
+  /* margin: right 24px; */
+  max-width: 240px;
+  /* overflow:hidden; */
 }
 .title-bar-controls {
   display:flex
@@ -578,7 +583,12 @@ pre {
   box-shadow:inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
   display:block;
   margin:0;
-  padding:12px 8px
+  padding:12px 8px;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+
+  height: 400px;
+  
 }
 
 summary:focus {

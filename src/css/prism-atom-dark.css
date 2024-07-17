@@ -43,7 +43,7 @@ pre[class*="language-"] {
 :not(pre) > code {
 	font-family: win98;
 	background-color:hsla(0,0%,100%,.1) ;
-    padding: 0px .3rem;
+    padding: 0px 0px;
     border: .1rem solid rgba(0,0,0,.1);
 	/* padding: .1em;
 	border-radius: .3em; */
