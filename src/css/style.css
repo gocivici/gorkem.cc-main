@@ -154,6 +154,12 @@ img{
         background-color:red !important;
     }
 
+    .newButton{
+        position:absolute; 
+        width:30px;
+        bottom:12px;
+    }
+
     .info-bubble{
         width: 200px;
         bottom:103%;
@@ -1799,6 +1805,15 @@ and then subtrack it by 100. use this new number as the
             padding-left: 5px;
             padding-right: 5px;
  
+        }
+        .newButton{
+            transform: rotate(-45deg);
+            top: 35px;
+            width: 25px;
+            z-index: 999999;
+            /* padding-right: 10px; */
+            margin-left: -5px !important;
+            /* bottom:20px; */
         }
 
         
