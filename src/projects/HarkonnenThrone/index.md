@@ -53,11 +53,30 @@ repoUrl: "#"
   .after figcaption {
     right: 12px;
   }
+  #parentDUNE {
+  display: flex;
+}
+#narrowDUNE {
+  width: 325px;
+  /* background: lightblue; */
+
+  /* Just so it's visible */
+}
+#wideDUNE {
+  flex: 1;
+    padding-left:10px;
+  /* Grow to rest of container */
+  /* background: lightgreen; */
+  /* Just so it's visible */
+}
+.css-g03djc{
+  background:black !important;
+}
 </style>
 
+https://youtu.be/gZPEoz-PpNI
 
-
-![harkobaby](img/DSC00663.webp)
+<!-- ![harkobaby](img/DSC00663.webp) -->
 
 
 The LEGO Harkonnen Throne is a custom-built LEGO automata set based on the Harkonnen throne room from Denis Villeneuve's DUNE adaptation. When the button is pressed, it triggers a kinetic recreation of the [iconic throne room scene from the movie](https://www.youtube.com/watch?v=WQCV8O3oIU8){target="_blank"}, complete with audio and movement. 
