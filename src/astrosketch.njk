@@ -1,0 +1,99 @@
+---
+title: "Guestbook"
+header: "AstroSketch Image"
+layout: "base.njk"
+---
+
+<style>
+canvas{
+  width:100%;
+}
+#img{
+  display:none;
+}
+.astroContainer{
+  font-size:16px;
+}
+.astroContainer form{
+  font-size:16px;
+}
+.astroContainer input{
+  font-size:16px;
+}
+</style>
+
+<div id="flex">
+  <div class="left-box">
+    <div class="window main-left">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">AstroSketch Grayscale & Invert Tool</div>
+        <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <main class="astroContainer">
+        <form>
+          <p>Upload your sketch using the button below:</p>
+        {# <p><label for="file" style="cursor: pointer;"><b>Upload Image</b></label></p> #}
+        <p><input type="file" accept="image/*;capture=camera" name="image" id="file"  onchange="loadFile(event)"></p>
+
+        Converted Image:
+        {# (Right click or hold to save) #}
+        <div id="output"> </div>
+
+        <img id="img" />
+
+        </form>
+        </main>
+        <script>
+            let loadFile = function(event) {
+            
+          let image = document.getElementById("img");
+          image.src = URL.createObjectURL(event.target.files[0]);  
+        };
+
+        document.getElementById("img").onload = (event => {
+          let canvas = document.createElement("canvas");
+          let context = canvas.getContext("2d");
+          canvas.width = event.target.width;
+          canvas.height = event.target.height;
+          document.getElementById("output").appendChild(canvas);
+          context.drawImage(event.target, 0, 0);
+          let imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+          let data = imageData.data;
+            for (let i = 0; i < data.length; i += 4) {
+            const avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
+            data[i] = avg; // red
+            data[i + 1] = avg; // green
+            data[i + 2] = avg; // blue
+          }
+          for (var i = 0; i < data.length; i += 4) {
+              data[i]     = 255 - data[i]; // red
+              data[i + 1] = 255 - data[i + 1]; // green
+              data[i + 2] = 255 - data[i + 2]; // blue
+            }
+            context.putImageData(imageData, 0, 0);
+        });
+
+        </script>
+
+        </div>
+        </div>
+</div>
+</div>
+
+
+
+        
+
+
+
+
+
+
+{# <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script> #}
+
+<script src="/custom.js"></script>
+<script src="/bgswitch.js"></script>
