@@ -20,6 +20,17 @@ canvas{
 .astroContainer input{
   font-size:16px;
 }
+#dl{
+  display:none;
+  font-size: 16px;
+  text-align: center;
+  margin: 15px;
+}
+#result{
+   text-align:center; 
+   font-size:16px;
+   display:none;
+}
 </style>
 
 <div id="flex">
@@ -39,14 +50,19 @@ canvas{
         {# <p><label for="file" style="cursor: pointer;"><b>Upload Image</b></label></p> #}
         <p><input type="file" accept="image/*;capture=camera" name="image" id="file"  onchange="loadFile(event)"></p>
 
-        Converted Image:
-        {# (Right click or hold to save) #}
-        <div id="output"> </div>
+        {# <label for="BrightnessSlider">Brightness (<span id="BrightnessValue">0</span>)</label>
+<br>
+<input id="BrightnessSlider" type="range" value="50" min="-100" max="100">
+<br>
+<label for="ContrastSlider">Contrast (<span id="ContrastValue">0</span>)</label>
+<br>
+<input type="range" id="ContrastSlider" value="0" min="-100" max="100"> #}
 
         <img id="img" />
 
         </form>
         </main>
+
         <script>
             let loadFile = function(event) {
             
@@ -76,12 +92,38 @@ canvas{
               data[i + 2] = 255 - data[i + 2]; // blue
             }
             context.putImageData(imageData, 0, 0);
+            function dlCanvas() {
+                var dt = canvas.toDataURL('image/png');
+                /* Change MIME type to trick the browser to downlaod the file instead of displaying it */
+                dt = dt.replace(/^data:image\/[^;]*/, 'data:application/octet-stream');
+
+                /* In addition to <a>'s "download" attribute, you can define HTTP-style headers */
+                dt = dt.replace(/^data:application\/octet-stream/, 'data:application/octet-stream;headers=Content-Disposition%3A%20attachment%3B%20filename=Sketch.png');
+
+                this.href = dt;
+              };
+              document.getElementById("dl").addEventListener('click', dlCanvas, false);
+              document.getElementById("result").style.display = "block";
+              document.getElementById("dl").style.display = "block";
+            //let downloadimage = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+            //console.log(downloadimage);
         });
+
+          // here is the most important part because if you dont replace you will get a DOM 18 exception.
+
+        
+        {# window.location.href=downloadimage; // it will save locally #}
+
 
         </script>
 
         </div>
         </div>
+                <p id="result">Converted Image</p>
+                
+        {# (Right click or hold to save) #}
+        <div id="output"> </div>
+        <a id="dl" download="Sketch.png" href="#">Download Result</a>
 </div>
 </div>
 
