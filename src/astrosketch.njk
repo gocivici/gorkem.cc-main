@@ -1,6 +1,6 @@
 ---
 title: "Guestbook"
-header: "AstroSketch Image"
+header: "AstroSketch Invert"
 layout: "base.njk"
 ---
 
@@ -51,6 +51,7 @@ canvas{
             let loadFile = function(event) {
             
           let image = document.getElementById("img");
+          image.crossOrigin = "anonymous";
           image.src = URL.createObjectURL(event.target.files[0]);  
         };
 
