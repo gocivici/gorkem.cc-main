@@ -1,0 +1,126 @@
+---
+title: "🌌 AstroSketch Image Invert Utility"
+header: "AstroSketch Invert"
+layout: "base.njk"
+---
+
+ <link rel="stylesheet" href="{{'/tools/astrosketch.css' | url | safe}}">
+
+<div id="flex" style="max-width:500px;margin:auto;">
+  <div class="left-box">
+    <div class="window main-left">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">🌌 AstroSketch Image Invert.exe</div>
+        <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <main class="astroContainer">
+
+          {# <h4>AstroSketch Invert</h4> #}
+          <div class="astroFlex">
+          <div class="astrotext">
+          <p>This tool allows you to invert <a target="_blank" href="https://www.astroleague.org/sketching-resources/">negative astronomy sketches</a></p>
+          <p>Operates directly in the browser via JavaScript, no images are uploaded to a server.</p>
+          <p>Upload your sketch using the button below and click Submit</p>
+          </div>
+          <figure>
+          <img src="/images/telescope2.gif"></img>
+          </figure>
+          </div>
+
+  {# <hr> #}
+
+        <form id="settings">
+
+        {# <p><label for="file" style="cursor: pointer;"><b>Upload Image</b></label></p> #}
+        
+<div class="settings">
+  <div class="field-row flexwrap">
+    <input class="centerButton" type="file" accept="image/*;capture=camera" name="image" id="file"  onchange="loadFile(event)">
+          <div class="checkboxContainer">
+            <div class="invert">
+            <input checked disabled="true" type="checkbox" id="invertBox">
+            <label for="invertBox">Invert</label>
+            </div>
+
+          <div class="grayscale">
+            <input checked disabled="true" type="checkbox" id="grayscaleBox">
+            <label for="grayscaleBox">Grayscale</label>
+            </div>
+          </div>
+  </div>
+  <div class="field-row">
+    <label for="BrightnessSlider">Brightness:</label>
+    <label for="BrightnessSlider" style="">L</label>
+    <input id="BrightnessSlider" width="200px" type="range" value="-25" min="-100" max="100">
+    <label for="BrightnessSlider">H</label>
+    <label for="BrightnessSlider">(<span style="width:24px; color:orange;" id="BrightnessValue">-25</span>)</label>
+  </div>
+  <div class="field-row">
+    <label for="ContrastSlider">Contrast:&nbsp;&nbsp;</label>
+    <label for="ContrastSlider">L</label>
+
+    <input id="ContrastSlider" type="range" value="38" min="-100" max="100">
+    <label for="ContrastSlider">H</label>
+    <label for="ContrastSlider">(<span style="width:24px; color:orange;" id="ContrastValue">38</span>)</label>
+
+  </div>
+</div>
+
+        <img id="img" />
+
+        </form>
+        <button id="submitButton">Submit</button>
+        
+</main>
+
+  <script type="text/javascript" src="/tools/astrosketch.js"></script>
+
+        </div>
+        </div>
+                <p id="result">⬇️Converted Image⬇️</p>
+                
+        {# (Right click or hold to save) #}
+         
+ <div id="outputWindow">
+  <div class="left-box">
+    <div class="window main-left">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">🖼️ Sketch.png</div>
+        <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        {# <div id="output"></div> #}
+        <canvas id="myCanvas"></canvas>
+        <a id="dl" download="Sketch.png" href="#">Download Result</a>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+</div>
+</div>
+
+
+
+        
+
+
+
+
+
+
+{# <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script> #}
+
+<script src="/custom.js"></script>
+<script src="/bgswitch.js"></script>
