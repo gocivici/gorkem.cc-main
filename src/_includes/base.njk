@@ -5,7 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
+  <meta name="title" content="{{title}}" />
+  <meta name="description" content="{{summary}}" />
   <link rel="icon" type="image/gif" href="/favicon.gif">
+
+    <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://gorkem.cc">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{summary}}">
+  <meta property="og:image" content="{{thumbnailImg}}">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="gorkem.cc">
+  <meta property="twitter:url" content="https://gorkem.cc">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{summary}}">
+  <meta name="twitter:image" content="{{thumbnailImg}}">
 
   <link rel="stylesheet" href="{{'/css/custom98.css' | url | safe}}">
   <!-- <link rel="stylesheet" href="https://unpkg.com/98.css"> -->
