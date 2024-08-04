@@ -2,6 +2,7 @@
 title: "🌌 AstroSketch Image Invert Utility"
 header: "AstroSketch Invert"
 layout: "base.njk"
+custombg: img/dunebg.png
 ---
 
  <link rel="stylesheet" href="{{'/tools/astrosketch.css' | url | safe}}">
@@ -24,12 +25,14 @@ layout: "base.njk"
           <div class="astrotext">
           <p>This tool allows you to invert <a target="_blank" href="https://www.astroleague.org/sketching-resources/">negative astronomy sketches</a></p>
           <p>Operates directly in the browser via JavaScript, no images are uploaded to a server.</p>
-          <p>Upload your sketch using the button below and click Submit</p>
+          
           </div>
+          
           <figure>
           <img src="/images/telescope2.gif"></img>
           </figure>
           </div>
+          <p style="text-align:left;margin-top:0px;">Upload your sketch using the button below and click Submit. <a href="">Click here</a> to read how it works.</p>
 
   {# <hr> #}
 
@@ -99,6 +102,7 @@ layout: "base.njk"
         {# <div id="output"></div> #}
         <canvas id="myCanvas"></canvas>
         <a id="dl" download="Sketch.png" href="#">Download Result</a>
+        {# <button id="DLbutton" download="Sketch.png" onclick="">Download Result</button> #}
 
         </div>
         </div>
@@ -123,4 +127,4 @@ layout: "base.njk"
 {# <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script> #}
 
 <script src="/custom.js"></script>
-<script src="/bgswitch.js"></script>
+{# <script src="/bgswitch.js"></script> #}
