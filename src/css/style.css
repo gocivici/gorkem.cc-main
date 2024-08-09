@@ -153,7 +153,13 @@ img{
         --body-bg-image:var(--red-theme);
         background-color:red !important;
     }
-
+    .clickMe {
+        -moz-appearance: button;
+        -ms-appearance: button;
+        -o-appearance: button;
+        -webkit-appearance: button;
+        appearance: button;
+    }
     .newButton{
         position:absolute; 
         width:30px;
@@ -1078,6 +1084,15 @@ between the sidebars! */
     }
 
     .allbuttons img{
+        padding:0px 2px 0px 2px;
+    }
+    .centerbuttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .centerbuttons img{
         padding:0px 2px 0px 2px;
     }
  

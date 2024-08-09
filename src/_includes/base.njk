@@ -79,19 +79,19 @@
         <nav id="navbar" style="">
           <ul>
 
-            <li><button onclick="location.href='/';" class="{{ 'active' if page.url == '/' }}"><img class="icon"
+            <li><a href="/"><button onclick="location.href='/';" class="{{ 'active' if page.url == '/' }}"><img class="icon"
                   style="vertical-align: middle;" src="/images/icons/address_book_home.png"></img>
                 <h4>Home</h4>
-              </button></li>
-            <li><button onclick="location.href='/projects';" class="{{ 'active' if '/projects' in page.url }}"><img
+              </button></a></li>
+            <li><a href="/projects"><button onclick="location.href='/projects';" class="{{ 'active' if '/projects' in page.url }}"><img
                   class="icon" style="vertical-align: middle;" src="/images/icons/defragment-0.png"></img>
                 <h4>Projects</h4>
-              </button></li>
-            <li><button onclick="location.href='/blog';" class="{{ 'active' if '/blog' in page.url }}"><img class="icon"
+              </button></a></li>
+            <li><a href="/blog"><button onclick="location.href='/blog';" class="{{ 'active' if '/blog' in page.url }}"><img class="icon"
                   style="vertical-align: middle;"
                   src="/images/icons/newspaper.png"></img>
                 <h4>Blog</h4>
-              </button></li>
+              </button></a></li>
             <li>
               <a href="http://cafe.gorkem.cc"><img class="newButton" src="/images/new2.gif"></img></a>
               <button onclick="javascript:location.href='http://cafe.gorkem.cc'" class="{{ 'active' if '/cafe' in page.url }}">
@@ -102,19 +102,19 @@
                 
               </button></a></li>
             <!-- <li><a href="#"><button><img class="icon" style="vertical-align: middle;" src="./icons/tools_gear-0.png"></img><h4>DIY</h4></button></a></li> -->
-            <li><button onclick="location.href='/about';" class="{{ 'active' if '/about' in page.url }}"><img
+            <li><a href="/about"><button onclick="location.href='/about';" class="{{ 'active' if '/about' in page.url }}"><img
                   class="icon" style="vertical-align: middle;" src="/images/icons/help_sheet-0.png"></img>
                 <h4>About</h4>
-              </button></li>
+              </button></a></li>
             <li><button disabled><img class="icon" style="vertical-align: middle; filter: grayscale(100%);"
                     src="/images/icons/internet_connection_wiz-0.png"></img>
                   <h4>Library</h4>
                 </button></li>
 
-                            <li><button onclick="location.href='/guestbook';" class="{{ 'active' if '/guestbook' in page.url }}" ><img class="icon" style="vertical-align: middle;"
+                            <li><a href="/guestbook"><button onclick="location.href='/guestbook';" class="{{ 'active' if '/guestbook' in page.url }}" ><img class="icon" style="vertical-align: middle;"
                     src="/images/icons/address_book_pad_users.png"></img>
                   <h4>Guestbook</h4>
-                </button></li>
+                </button></a></li>
 
             {# <li><a href="#"><button disabled><img class="icon" style="vertical-align: middle; filter: grayscale(100%);"
                     src="/images/icons/expand_hierarchial_array-0.png"></img>

@@ -5,7 +5,8 @@ image: 04-08-2024/img/cover.webp
 thumbnailImg: img/cover.webp
 imageAlt: "Project Image"
 date: Last Modified
-created: 2024-08-04
+created: 2025-08-04
+type: "DIY Guide"
 tags:
   - "Astronomy"
   - "Web Dev"
@@ -14,4 +15,5 @@ repoUrl: "#"
 ---
 
 ## Introduction {.invisible}
+test
 

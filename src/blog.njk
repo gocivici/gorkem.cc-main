@@ -6,7 +6,7 @@ layout: "base.njk"
 
 <div id="flex">
   <div class="postCollection">
-    {% for blogPost in collections.blog | reverse %}
+    {% for blogPost in collections.blog | sort(true,false,'data.created') %}
       {% include "post-card.njk" %}
     {% endfor %}
   </div>
