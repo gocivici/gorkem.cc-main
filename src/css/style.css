@@ -153,13 +153,7 @@ img{
         --body-bg-image:var(--red-theme);
         background-color:red !important;
     }
-    .clickMe {
-        -moz-appearance: button;
-        -ms-appearance: button;
-        -o-appearance: button;
-        -webkit-appearance: button;
-        appearance: button;
-    }
+
     .newButton{
         position:absolute; 
         width:30px;
