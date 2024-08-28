@@ -6,7 +6,7 @@ thumbnailImg: img/cover.webp
 imageAlt: "Project Image"
 date: Last Modified
 created: 2024-02-20
-type: "DIY Guide"
+type: "Blog"
 tags:
   - "Repair"
   - "Electronics"

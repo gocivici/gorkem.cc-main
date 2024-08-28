@@ -6,7 +6,7 @@ thumbnailImg: img/startracker.jpg
 imageAlt: "Project Image"
 date: Last Modified
 created: 2016-07-29
-type: "Project Showcase"
+type: "Full DIY guide"
 tech:
   - "Arduino"
   - "Astronomy"

@@ -6,7 +6,7 @@ thumbnailImg: img/cover.webp
 imageAlt: "Project Image"
 date: Last Modified
 created: 2025-08-04
-type: "DIY Guide"
+type: "Blog"
 tags:
   - "Astronomy"
   - "Web Dev"
