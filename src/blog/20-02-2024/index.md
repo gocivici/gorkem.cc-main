@@ -2,7 +2,7 @@
 title: "Microsoft Trackball Explorer Micro Switch Repair"
 summary: "My Trackball mouse started having double clicking issues recently, I found out that the microswitch was causing the issue and decided to replace it."
 image: 20-02-2024/img/cover.webp
-thumbnailImg: img/cover.webp
+thumbnailImg: /img/cover.webp
 imageAlt: "Project Image"
 date: Last Modified
 created: 2024-02-20
