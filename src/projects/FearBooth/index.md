@@ -2,6 +2,7 @@
 title: "Fear Booth"
 summary: "Raspberry Pi Powered Photo Booth With a Spooky Twist"
 image: FearBooth/img/fear.jpg
+thumbnailImg: img/fear.jpg
 imageAlt: "Project Image"
 date: Last Modified
 created: 2023-11-13

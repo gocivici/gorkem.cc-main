@@ -2,6 +2,7 @@
 title: "Trinteract"
 summary: "An open-source Arduino-compatible 3DOF Human Interface Device (HID)."
 image: Trinteract/img/trinteract.png
+thumbnailImg: img/trinteract.png
 imageAlt: "Project Image"
 date: Last Modified
 created: 2023-06-26

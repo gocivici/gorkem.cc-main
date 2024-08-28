@@ -2,6 +2,7 @@
 title: "Periodic Table Clock"
 summary: "A clock that displays the time using atomic numbers by illuminating different elements on a periodic table."
 image: PeriodicTableClock/img/periodic.gif
+thumbnailImg: img/periodic.gif
 imageAlt: "Project Image"
 date: Last Modified
 created: 2023-02-27

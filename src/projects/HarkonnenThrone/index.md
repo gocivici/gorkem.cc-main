@@ -2,7 +2,7 @@
 title: "LEGO Dune - Baron Harkonnen Throne Automata"
 summary: "Custom built LEGO Dune Harkonnen throne with display and sound"
 image: HarkonnenThrone/img/throne.webp
-thumbnailImg: https://gorkem.cc/projects/HarkonnenThrone/img/throne.webp
+thumbnailImg: img/throne.webp
 custombg: img/dunebg.png
 imageAlt: "Project Image"
 date: Last Modified

@@ -2,6 +2,7 @@
 title: "Marble Clock"
 summary: "3D printed rolling ball clock that tells the time by the location of marbles/balls"
 image: MarbleClock/img/marbleClock.jpg
+thumbnailImg: img/marbleClock.jpg
 imageAlt: "Project Image"
 date: Last Modified
 created: 2018-07-28
