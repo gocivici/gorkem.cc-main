@@ -18,6 +18,7 @@ thumbnailImg: "/images/linkpreview.png"
                     </div> -->
 
 <!-- </aside> -->
+
 <div class="homeContainer" id="flex">
     <div class="left-box">
         <div class="window main-left">
@@ -63,6 +64,17 @@ thumbnailImg: "/images/linkpreview.png"
             <div class="window-body">
                 <div class=" updatesBox">
                     <main style="margin-top: 0px;">
+                        <p>
+                            <strong>September 22th, 2024</strong>
+                        </p>
+                            <ul>
+                                
+                                <li>Created new theme for Halloween!</li>
+                                <li>Developed a tool to invert astronomy drawings: <a href="/tools/astrosketch">Astrosketch Invert</a></li>
+                                
+                            </ul>
+                        
+                        <hr>
                         <p>
                             <strong>March 13th, 2024</strong>
                         </p>
@@ -118,7 +130,9 @@ thumbnailImg: "/images/linkpreview.png"
                     </main>
                 </div>
             </div>
+            
         </div>
+        
 
         <div class="window main-left bottomWindowStatus">
             {# <div id="app"></div> #}
@@ -197,9 +211,21 @@ thumbnailImg: "/images/linkpreview.png"
                 </div>
 
             </div>
+            
         </div>
+<div class="bottomContainer">
+    <img src="/images/halloweenjason.gif" width="100" style="margin-top: 30px; margin-left: 20px; vertical-align: middle;">
+<div class="wimampContainer">
+<div id="app">
+    
+</div>
+</div>
+{# <div class="candleStick"></div> #}
+</div>
+
 
     </div>
+    
     <div class="right-box">
         <div class="window main-right">
             <div class="title-bar inactive">
@@ -218,6 +244,25 @@ thumbnailImg: "/images/linkpreview.png"
                     </div>
                     <script src="https://status.cafe/current-status.js?name=gorkem" defer></script>
 
+                </aside>
+            </div>
+        </div>
+
+        <div id="visitorCount" class="window main-right">
+            <div class="title-bar inactive">
+                <div class="title-bar-text">HalloweenCounter.exe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Help"></button>
+                    <!-- <button aria-label="Close"></button> -->
+                </div>
+            </div>
+            <div class="window-body" >
+                <aside id="rightSidebar" style="text-align: center; padding:0px;">
+                    {# You are visitor no: #}
+                   {# <p> You are visitor no:</p> #}
+                    {# <a href="https://www.cutercounter.com/"><img src="https://www.cutercounter.com/hits.php?id=hxodcxx&nd=6&style=23" border="0" alt="website counter"></a> #}
+<a href="https://www.ilovehalloween.com"><img border="0" src="https://www.ilovehalloween.com/h/i/fcountdown-bl3.jpg" width="100%"></a>
+{# <img border="0" src="/images/IMG_2140.JPG" width="100%"> #}
                 </aside>
             </div>
         </div>
@@ -243,23 +288,7 @@ thumbnailImg: "/images/linkpreview.png"
         </div>
 
 
-        <div id="visitorCount" class="window main-right">
-            <div class="title-bar inactive">
-                <div class="title-bar-text">VisitorCounter.exe</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Help"></button>
-                    <!-- <button aria-label="Close"></button> -->
-                </div>
-            </div>
-            <div class="window-body" >
-                <aside id="rightSidebar" style="text-align: center;">
-                    You are visitor no:
-                   {# <p> You are visitor no:</p> #}
-                    <a href="https://www.cutercounter.com/"><img src="https://www.cutercounter.com/hits.php?id=hxodcxx&nd=6&style=23" border="0" alt="website counter"></a>
 
-                </aside>
-            </div>
-        </div>
 
         <div class="window main-right">
             <div class="title-bar inactive">
@@ -274,12 +303,12 @@ thumbnailImg: "/images/linkpreview.png"
 
                     
                     <div class="field-row">
-                        <input checked id="theme-switch1" type="radio" name="theme-switch" onClick="changeBackground('1')">
-                        <label for="theme-switch1">Green Tile (Default)</label>
+                        <input  id="theme-switch1" type="radio" name="theme-switch" onClick="changeBackground('1')">
+                        <label for="theme-switch1">Green Tile</label>
                     </div>
                     <div class="field-row">
-                        <input id="theme-switch2" type="radio" name="theme-switch" onClick="changeBackground('2')">
-                        <label for="theme-switch2">SH3 Loading Screen</label>
+                        <input checked id="theme-switch2" type="radio" name="theme-switch" onClick="changeBackground('2')">
+                        <label for="theme-switch2">Halloween</label>
                     </div>
                     <div class="field-row">
                         <input  id="theme-switch3" type="radio" name="theme-switch" onClick="changeBackground('3')">
@@ -288,6 +317,10 @@ thumbnailImg: "/images/linkpreview.png"
                      <div class="field-row">
                         <input id="theme-switch4" type="radio" name="theme-switch" onClick="changeBackground('4')">
                         <label for="theme-switch4">PS1 Tile</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="theme-switch5" type="radio" name="theme-switch" onClick="changeBackground('5')">
+                        <label for="theme-switch5">SH3 Loading Screen</label>
                     </div>
 
                 </aside>
@@ -328,9 +361,71 @@ thumbnailImg: "/images/linkpreview.png"
 <script src="./bgswitch.js"></script>
 <script src="./home.js"></script>
 
-{# <script src="https://unpkg.com/webamp"></script>
+<script src="https://unpkg.com/webamp"></script>
 <script>
     const app = document.getElementById("app")
-    const webamp = new Webamp();
+    const webamp = new Webamp({
+        initialTracks: [
+          {
+            metaData: {
+            title: "Scape Scared",
+              artist: "Ian Taylor",
+              
+            },
+            // NOTE: Your audio file must be served from the same domain as your HTML
+            // file, or served with permissive CORS HTTP headers:
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            url: "/etc/Scape Scared.ogg",
+            duration: 267,
+          },
+          {
+            metaData: {
+              title: "Still Night",
+              artist: "Ian Taylor",
+            },
+            // NOTE: Your audio file must be served from the same domain as your HTML
+            // file, or served with permissive CORS HTTP headers:
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            url: "/etc/Still Night.ogg",
+            duration: 322.612245,
+          },
+          {
+            metaData: {
+              title: "Spooky",
+              artist: "Ian Taylor",
+            },
+            // NOTE: Your audio file must be served from the same domain as your HTML
+            // file, or served with permissive CORS HTTP headers:
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            url: "/etc/Spooky.mp3",
+
+          },
+        ],
+        windowLayout: {
+          main: {
+            position: { top: 0, left: 0 },
+            shadeMode: false,
+            closed: false,
+          },
+          equalizer: {
+            position: { top: 116, left: 0 },
+            shadeMode: false,
+            size: { extraWidth: 0, extraHeight: 4 },
+            closed: false,
+          },
+          playlist: {
+            position: { top: 0, left: 275 },
+            shadeMode: false,
+            size: { extraWidth: 0, extraHeight: 4 },
+            closed: false,
+          },
+        },
+        initialSkin: {
+        url: 
+      // Find skins https://skins.webamp.org - download them and          host them on your website!
+     "/css/Musique Macabre Classic.wsz"
+    },
+        //enableDoubleSizeMode: true,
+      });
     webamp.renderWhenReady(app);
-</script> #}
+</script>

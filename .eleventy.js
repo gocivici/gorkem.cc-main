@@ -83,7 +83,7 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPassthroughCopy("./src/css/*");
   // eleventyConfig.addPassthroughCopy("**/*.webp");
-  eleventyConfig.addPassthroughCopy('./src/**/*.{webp,jpeg,jpg,png,gif,svg,kmz,zip,css,js,ico,pdf,html,txt}');
+  eleventyConfig.addPassthroughCopy('./src/**/*.{webp,jpeg,jpg,png,gif,svg,kmz,zip,css,js,ico,pdf,html,txt,ogg,mp3}');
   // eleventyConfig.addPassthroughCopy('./src/**/*');
   // eleventyConfig.addPassthroughCopy("./src/custom.js");
   // eleventyConfig.addPassthroughCopy("./src/figlet.js");
