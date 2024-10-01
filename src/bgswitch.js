@@ -13,7 +13,7 @@ function changeBackground(value)
             document.getElementById("halloween").style.display="none";
         break;
         case '2':
-            document.body.style.backgroundImage = "linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), var(--theme-2)";
+            document.body.style.backgroundImage = "linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), var(--theme-2)";
 			document.getElementById("theme-switch2").checked = true;
             // document.querySelectorAll('[id=halloween]').style.display="block";   0.8  0.6
             document.getElementById("halloween").style.display="block";
