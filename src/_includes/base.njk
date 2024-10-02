@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% set thumbnailImg = 'https://gorkem.cc' + page.url + thumbnailImg %}
-{% set title = title + ' | ' + type %}
+{% set title = title + ' | ' + type | default("") %}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
