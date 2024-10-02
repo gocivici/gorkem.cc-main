@@ -366,6 +366,17 @@ thumbnailImg: "/images/linkpreview.png"
     const app = document.getElementById("app")
     const webamp = new Webamp({
         initialTracks: [
+                  {
+            metaData: {
+              title: "Spooky",
+              artist: "Ian Taylor",
+            },
+            // NOTE: Your audio file must be served from the same domain as your HTML
+            // file, or served with permissive CORS HTTP headers:
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+            url: "/etc/Spooky.mp3",
+
+          },
           {
             metaData: {
             title: "Scape Scared",
@@ -388,17 +399,6 @@ thumbnailImg: "/images/linkpreview.png"
             // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
             url: "/etc/Still Night.mp3",
             duration: 322.612245,
-          },
-          {
-            metaData: {
-              title: "Spooky",
-              artist: "Ian Taylor",
-            },
-            // NOTE: Your audio file must be served from the same domain as your HTML
-            // file, or served with permissive CORS HTTP headers:
-            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-            url: "/etc/Spooky.mp3",
-
           },
         ],
         windowLayout: {
