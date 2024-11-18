@@ -4,6 +4,7 @@ summary: "Zotero is a research tool to store pdf files and annotate them, in thi
 imageAlt: "Project Image"
 date: Last Modified
 image: 17-11-2024/img/cover.png
+thumbnailImg: img/cover.png
 created: 2024-11-17
 type: "Blog"
 tags:
