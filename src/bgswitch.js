@@ -1,6 +1,16 @@
 //Background switcher
+
+//clear memory once.
+if (localStorage.getItem("clearStorage") === "1") {
+    localStorage.clear();
+    localStorage.setItem("clearStorage", "2");
+  }
+
+
 if(localStorage.getItem('currentTheme')){
 	changeBackground(localStorage.getItem('currentTheme'));
+}else{
+    changeBackground('3');
 }
 
 function changeBackground(value)

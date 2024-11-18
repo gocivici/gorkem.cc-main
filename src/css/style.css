@@ -12,9 +12,9 @@
         /* --content: #c3aae5; */
     }
 
-    /* #halloween{
+    #halloween{
         display:none;
-    } */
+    }
 
     /* if you have the URL of a font, you can set it below */
     /* feel free to delete this if it's not your vibe */
@@ -115,6 +115,14 @@ and then link it! Many fonts have separate files for each style
         font-family: IBM;
         src: url(./Web437_NEC_APC3_8x16.woff);
         font-style: normal;
+        
+    }
+
+    @font-face {
+        font-family: Digito;
+        src: url(./DS-DIGIB.TTF);
+        font-style: normal;
+        font-weight: bold;
         
     }
 
@@ -227,6 +235,16 @@ img{
     width:100%;
     float: left;
 }
+
+.door{
+    margin-top: 30px; 
+    vertical-align: middle;
+    -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.8));
+}
+.door:hover {
+	-webkit-filter: drop-shadow(0px 0px 10px rgba(255, 140, 0, 0.8));
+}
+
 .wimampContainer{
     height: 230px;
     width:559px;
@@ -292,6 +310,10 @@ img{
         font-size: 17px;
         color: #DBDBDB;
         /* padding-top: 30px; */
+    }
+
+    .project .window-body{
+        max-width: 600px;
     }
     .project p{
         margin-top: 0px;
@@ -411,7 +433,8 @@ img{
     border:0; 
     height:30px; 
     margin: 15px 0 15px 0;
-    background:url("/images/slowLights.gif"); 
+     /* background:url("/images/slowLights.gif"); for halloween */
+     background:url("/images/treeline.gif");
     background-size:contain;
     /* width: auto; */
 }
@@ -1724,8 +1747,11 @@ and then subtrack it by 100. use this new number as the
         #moon{
             display: none;
         }
+        /* #goatcounterContain{
+            font-family: Arial, Helvetica, sans-serif;
+        } */
         /* #visitorCount{
-            display:none;
+            font-family: Digito;
         } */
         .categoryBox{
             order:1;

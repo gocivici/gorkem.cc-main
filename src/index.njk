@@ -66,6 +66,18 @@ type: "Home"
                 <div class=" updatesBox">
                     <main style="margin-top: 0px;">
                         <p>
+                            <strong>November 17th, 2024</strong>
+                        </p>
+                            <ul>
+                                <li>New blog post! <a href="/blog/17-11-2024/">Self-hosting Zotero Storage</a></li>
+                                <li>Added small winter decorations</li>
+                                <li>New visitor counter</li>
+                                
+                                
+                            </ul>
+                        
+                        <hr>
+                        <p>
                             <strong>September 22th, 2024</strong>
                         </p>
                             <ul>
@@ -215,7 +227,8 @@ type: "Home"
             
         </div>
 <div class="bottomContainer">
-    <img src="/images/halloweenjason.gif" width="100" style="margin-top: 30px; margin-left: 20px; vertical-align: middle;">
+    {# <a href="http://cafe.gorkem.cc"><img class="door" src="/images/door.png" width="148" style=""></a> #}
+    <a href="http://cafe.gorkem.cc"><img class="door" src="/images/christmastree.gif" width="148" style=""></a>
 <div class="wimampContainer">
 <div id="app">
     
@@ -251,7 +264,7 @@ type: "Home"
 
         <div id="visitorCount" class="window main-right">
             <div class="title-bar inactive">
-                <div class="title-bar-text">HalloweenCounter.exe</div>
+                <div class="title-bar-text">VisitorCounter.exe</div>
                 <div class="title-bar-controls">
                     <button aria-label="Help"></button>
                     <!-- <button aria-label="Close"></button> -->
@@ -260,10 +273,12 @@ type: "Home"
             <div class="window-body" >
                 <aside id="rightSidebar" style="text-align: center; padding:0px;">
                     {# You are visitor no: #}
-                   {# <p> You are visitor no:</p> #}
+                    <div id="goatcounterContain">
+                   <p style="margin-bottom:-10px;"> You are visitor no:</p>
                     {# <a href="https://www.cutercounter.com/"><img src="https://www.cutercounter.com/hits.php?id=hxodcxx&nd=6&style=23" border="0" alt="website counter"></a> #}
-<a href="https://www.ilovehalloween.com"><img border="0" src="https://www.ilovehalloween.com/h/i/fcountdown-bl3.jpg" width="100%"></a>
+{# <a href="https://www.ilovehalloween.com"><img border="0" src="https://www.ilovehalloween.com/h/i/fcountdown-bl3.jpg" width="100%"></a> #}
 {# <img border="0" src="/images/IMG_2140.JPG" width="100%"> #}
+                </div>
                 </aside>
             </div>
         </div>
@@ -424,9 +439,39 @@ type: "Home"
         initialSkin: {
         url: 
       // Find skins https://skins.webamp.org - download them and          host them on your website!
-     "/css/Musique Macabre Classic.wsz"
+     "/css/linux.wsz"
     },
         //enableDoubleSizeMode: true,
       });
     webamp.renderWhenReady(app);
+</script>
+
+<script>
+    var t = setInterval(function() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+            clearInterval(t)
+            window.goatcounter.visit_count({append: '#goatcounterContain', no_branding: 'true', style: `
+
+
+            body{
+            background-color: transparent;
+
+
+            }
+    div {
+            border:none;
+            color:white;
+
+            line-height:1;
+     }
+    #gcvc-for{
+    display:none;
+    }
+    #gcvc-views{
+        
+
+    }
+`})
+        }
+    }, 100)
 </script>
