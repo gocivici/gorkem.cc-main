@@ -34,7 +34,7 @@ var simpleRSSPlugin = (function() {
     var dates = [];
 	function handleJSON(data) {
 		if (data.feed && data.items) {
-			// console.log(data);
+			console.log(data);
 			var docFrag = document.createDocumentFragment();
 			for (var i = 0; i < data.items.length; i++) {
 				var e = data.items[i];
@@ -46,11 +46,11 @@ var simpleRSSPlugin = (function() {
 				var template = '<' + titleWrapper + e.title + titleWrapper + '>' + e.content;
 				var ratingPoint = "";
 				if (addLink === 'false') {
-					if(e.title.split("-")[1]){ratingPoint = " - " + e.title.split("-")[1];}else{ratingPoint="";}
+					// if(e.title.split("-")[1]){ratingPoint = e.title.split("-")[1];}else{ratingPoint="";}
 					// template = e.content;
 					// template = e.content.split(" <")[0] + '<' + titleWrapper + '>' +  dates[i].toLocaleDateString('en-us', { day:"numeric", month:"short"}) + " - " + e.title.split("-")[1] + '</' + titleWrapper + '>';
 					// template = "<a href=" + e.link + ">" + e.content.split(" <")[0] +  '<' + titleWrapper + '>' +  dates[i].toLocaleDateString('en-us', { day:"numeric", month:"short"}) + ratingPoint + '</' + titleWrapper + '>'+ "</a>";
-					template = "<a href=" + e.link + ">" + e.content.split(" <")[0] + "</a>" + '<' + titleWrapper + '>' +  "<a target='_blank' href=" + e.link + ">" +dates[i].toLocaleDateString('en-us', { day:"2-digit", month:"short"}) + '</' + titleWrapper + '>'+ "</a>";
+					template = "<a href=" + e.link + ">" + e.content.split(" <")[0] + "</a>" + '<' + titleWrapper + '>' +  "<a target='_blank' href=" + e.link + ">" +dates[i].toLocaleDateString('en-us', { day:"2-digit", month:"short"}) + '</' + titleWrapper + '>' + "</a>";
 				}
 				if (i < max) {
 					

@@ -15,17 +15,16 @@ siteUrl: "#"
 repoUrl: "#"
 ---
 
-https://vimeo.com/281662044
+https://www.youtube.com/watch?v=D74zF-GMfIw
 
-⚠️WARNING
-This project is archived and no longer maintained.  {.warning}
+⚠️WARNING: Archived Guide
+This project is archived and no longer maintained. While the core concepts may still be applicable, the instructions and code provided may not work with the latest versions of hardware, software, or libraries.  {.warning}
 
 Marble Clock is a 3D printed rolling ball clock that tells the time by the location of marbles/balls. It consists of 3 main rails, where,
 
 - The 5-minute rail with 1-minute intervals
 - The 60-minute rail with 5-minute intervals
 - The 12-hour rail with 1-hour intervals
-- test
 
 
 add up and tell the time.

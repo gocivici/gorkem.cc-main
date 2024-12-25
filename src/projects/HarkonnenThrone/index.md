@@ -13,7 +13,7 @@ tech:
   - "Arduino"
   - "Kinetic"
 siteUrl: "#"
-repoUrl: "#"
+repoUrl: "https://code.gorkyver.com/Gorkem/LegoHarkonnen"
 ---
 
 ## Introduction {.invisible}
@@ -78,6 +78,10 @@ repoUrl: "#"
 https://youtu.be/gZPEoz-PpNI
 
 <!-- ![harkobaby](img/DSC00663.webp) -->
+
+**Featured on**
+<img class="featured" src="/css/hackaday.png"> [Hackaday.com | A Throne For LEGO Baron Harkonnen](https://hackaday.com/2024/07/22/a-throne-for-lego-baron-harkonnen/){target="_blank"}
+<img class="featured" src="/css/adafruit.jpg"> [blog.adafruit.com | LEGO Dune – Baron Harkonnen throne automata build](https://blog.adafruit.com/2024/07/22/lego-dune-baron-harkonnen-throne-automata-build/){target="_blank"} {.press}
 
 
 The LEGO Harkonnen Throne is a custom-built LEGO automata set based on the Harkonnen throne room from Denis Villeneuve's DUNE adaptation. When the button is pressed, it triggers a kinetic recreation of the [iconic throne room scene from the movie](https://www.youtube.com/watch?v=WQCV8O3oIU8){target="_blank"}, complete with audio and movement. 

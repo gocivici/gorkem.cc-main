@@ -27,7 +27,7 @@ and then link it! Many fonts have separate files for each style
 
 */
 
-
+/* * { display:block; } */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:500');
 
@@ -123,6 +123,13 @@ and then link it! Many fonts have separate files for each style
         src: url(./DS-DIGIB.TTF);
         font-style: normal;
         font-weight: bold;
+        
+    }
+
+    @font-face {
+        font-family: typewriter;
+        src: url(./AA_typewriter.ttf);
+        font-style: normal;
         
     }
 
@@ -312,6 +319,12 @@ img{
         /* padding-top: 30px; */
     }
 
+    .nextPreviousButtons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+     }
+
     .project .window-body{
         max-width: 600px;
     }
@@ -389,6 +402,35 @@ img{
         font-family: "win98";
     }
 
+    .press{
+        background-color: #472b19;
+        border-left: 3px solid #d45e4c;
+        padding: 8px 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        /* font-family: "typewriter"; */
+        /* font-family: "win98"; */
+        text-shadow: none;
+       
+    }
+
+    .repoUrl{
+        text-align: center;
+        color: rgb(252, 88, 88);
+        font-weight: bold;
+        font-size:14px;
+        /* padding: 10px; */
+    }
+
+    #container .press a[target=_blank] {
+        filter: none;
+    }
+    .featured{
+        display: inline-block;
+        width: 21px !important;
+        vertical-align: middle;
+        
+    }
     .note strong{
         text-shadow: none;
         color:white;

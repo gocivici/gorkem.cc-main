@@ -1,5 +1,5 @@
 ---
-title: "self-hosting Zotero sync WebDAV on Ubuntu via Docker"
+title: "Self-hosting Zotero sync WebDAV on Ubuntu via Docker"
 summary: "Zotero is a research tool to store pdf files and annotate them, in this post I'm going to show you how to host your own cloud on a ubuntu VPS"
 imageAlt: "Project Image"
 date: Last Modified

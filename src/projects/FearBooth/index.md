@@ -12,12 +12,14 @@ tech:
   - "Open CV"
   - "Halloween"
 siteUrl: "#"
-repoUrl: "#"
+repoUrl: "https://code.gorkyver.com/Gorkem/FearBooth"
 ---
 ## Introduction {.invisible}
 
 https://www.youtube.com/watch?v=24zeD8yWEug
 
+**Featured on**
+<img class="featured" src="/css/hackster.png"> [Hackster.io | This DIY Photo Booth Evaluates Your Fear Level](https://www.hackster.io/news/this-diy-photo-booth-evaluates-your-fear-level-3218704f0630){target="_blank"} {.press}
 
 
 

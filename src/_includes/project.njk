@@ -63,18 +63,25 @@ body {
   <div class="project__content prose">
     {{ content | safe }}
   </div>
-  	{% if nextPost.url %}
-		<p class="ctr">
-			<strong>Next</strong>:
-			<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-		</p>
-	{% endif %}
+<br>
+<br>
+<hr>
+
+  <div class="nextPreviousButtons">
+
 	{% if prevPost.url %}
 		<p class="ctr">
 			<strong>Previous</strong>:
 			<a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
 		</p>
 	{% endif %}
+    	{% if nextPost.url %}
+		<p class="ctr">
+			<strong>Next</strong>:
+			<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+		</p>
+	{% endif %}
+  </div>
 </div>
 
                     
@@ -104,13 +111,15 @@ body {
                     {{ content | toc | safe }}
                 </div>
                 </div>
+                <a href="{{ repoUrl }}"><p class="repoUrl"><img
+                  style="width:30px;vertical-align: middle; padding-right:5px;" src="/images/icons/directory_control_panel-3.png"></img>Project Repo</p></a>
                 </div>
 
 
 
 
 
-
+            
             </div>
 </div>
 
