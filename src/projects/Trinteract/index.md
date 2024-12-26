@@ -11,7 +11,7 @@ tech:
   - "Custom PCB"
   - "OSHWA Certified"
 siteUrl: "#"
-repoUrl: "#"
+repoUrl: "https://code.gorkyver.com/Gorkem/trinteract"
 ---
 ## Introducion {.invisible}
 
@@ -23,12 +23,21 @@ https://www.youtube.com/watch?v=YoGgdORVARs
 
 
 
-📝**NOTE**
-You can keep track of the components with [this interactive guide](ibom.html) {.note}
 
-Trinteract is an open-source Arduino-compatible universal 3DOF input device. In other words, a joystick capable of moving in all 3 Dimensions but you decide what the joystick could be! Trinteract uses a Triple-Axis Magnetometer and a Neodymium magnet to detect motion in 3D space. It comes with a 3D-printed knob but electromagnets, magnetic textiles, or any magnetic object can also be used to control the input, creating more opportunities for interaction!
+
+
+<p>
+<a href="https://certification.oshwa.org/ee000001.html">[OSHW] EE00001 | Certified open source hardware</a>
+</p>
+
+Trinteract is an open-source Arduino-compatible universal 3DOF input device. In other words, a joystick capable of moving in all 3 Dimensions but you decide what the joystick could be! 
+
+Trinteract uses a Triple-Axis Magnetometer and a Neodymium magnet to detect motion in 3D space. It comes with a 3D-printed knob but electromagnets, magnetic textiles, or any magnetic object can also be used to control the input, creating more opportunities for interaction!
 
 Trinteract consists of 3 main components:
+
+📝**NOTE**
+You can keep track of the components with [this interactive guide](https://gocivici.github.io/trinteract/ibom.html) {.note}
 
 1. a **custom PCB** that acts as a breakout board for the sensor and makes it easy to connect to an Arduino.
 2. a **3D-printed flexure mechanism** in the form of an ergonomic knob that is housing a magnet.

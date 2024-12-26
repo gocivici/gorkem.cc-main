@@ -449,6 +449,30 @@ img{
     /* color:black !important; */
 }
 
+.bookshelf{
+    width: 100%;
+    z-index: -99;
+}
+
+.bookshelftext p{
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+
+.bookshelftext{
+    padding: 5px 50px 5px 50px;
+    position:absolute; 
+    top:5px;
+    text-align: center;
+    z-index: 99;
+    font-size: 16px;
+    color: #4B2704;
+    font-weight: bold;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
 .thumbnails {
     display: flex;
     margin: 1rem auto 0;
