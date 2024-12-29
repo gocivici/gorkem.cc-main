@@ -8,6 +8,9 @@ layout: "base.njk"
 .HalloContainer{
   width:100%;
 }
+body{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url( "/images/library.gif" ) !important;
+}
 </style>
             <div class="tooltip" role="tooltip">
                 <emoji-picker></emoji-picker>
@@ -23,20 +26,30 @@ layout: "base.njk"
         </div>
       </div>
       <div class="window-body">
+        <div class="bookshelfcontainer">
         <div class="bookshelftext">
-        <p>Welcome to the library!</p> 
+        <img style="vertical-align: middle;" src="/images/book0.gif"> <p style="display:inline;vertical-align: middle;">Welcome to my Bookshelf!</p> <img src="/images/book0.gif" style="vertical-align: middle;">
         <p>Here you can find standalone pages that include tutorials, lists, links
           that do not fit to the main categaroies of the home page and that deserve their own seperate pages. </p>
 
           </div>
+
+          <div class="shelf"> 
+            <a href="#"><div><img class="bookCover"  src="/images/fui.png"></div> </a>
+            <a href="#"><div><img class="bookCover"  src="/images/bookcover.png"></div> </a>
+            <a href="https://open.spotify.com/playlist/0cycDPRpeP5krpqa9nD1Xl?si=94b939ea01bd4a5a"><div><img class="bookCover"  src="/images/Playlistcover.png"></div></a>
+          </div>
           
+          
+          
+          {# <img class="bookshelf" src=""> #}
 
-          <img class="bookshelf" src="/images/Bookshelf.jpg">
-
-
+        <div class="shelf"></div>
+        <div class="shelf"></div>
+        <div class="shelf"></div>
 
        
-
+        </div>
       </div>
 
     </div>

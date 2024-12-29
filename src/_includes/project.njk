@@ -49,18 +49,25 @@ body {
 
   <div class="dateSection">
     <div class="projectTagRowTitle">
+
       {% for tag in tech %}
         <span class="contentTag {{ tag | replace(" ", "-") }}">{{ tag }}</span>
       {% endfor %}
     </div>
+    <div class="dateandrepo">
   <small class="dateString"><strong>Created:</strong> {{ created | postDate }} | <strong>Updated:</strong> {{ page.date | postDate }}</small>
+      
+      <a href="{{ repoUrl }}"><span style="font-size:15px;"><img
+                  style="width:25px;vertical-align: middle; padding-right:5px;" src="/images/icons/directory_control_panel-3.png"></img>Project Repo</span></a>
 
+</div>
 </div>
 </div>
   <div class="project__image-wrapper">
       <!-- <img class="projectImage" src="{{ image }}" alt="{{ imageAlt }}"> -->
   </div>
   <div class="project__content prose">
+    
     {{ content | safe }}
   </div>
 <br>
@@ -111,7 +118,7 @@ body {
                     {{ content | toc | safe }}
                 </div>
                 </div>
-                <a href="{{ repoUrl }}"><p class="repoUrl"><img
+                <a href="{{ repoUrl }}"><p style="text-align: center;" class="repoUrl"><img
                   style="width:30px;vertical-align: middle; padding-right:5px;" src="/images/icons/directory_control_panel-3.png"></img>Project Repo</p></a>
                 </div>
 

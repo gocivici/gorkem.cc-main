@@ -108,10 +108,10 @@
                   class="icon" style="vertical-align: middle;" src="/images/icons/help_sheet-0.png"></img>
                 <h4>About</h4>
               </button></a></li>
-            <li><button disabled><img class="icon" style="vertical-align: middle; filter: grayscale(100%);"
+            <li><a href="/Library"><button disabled class="{{ 'active' if '/library' in page.url }}" ><img class="icon" style="vertical-align: middle;filter: grayscale(100%);"
                     src="/images/icons/internet_connection_wiz-0.png"></img>
                   <h4>Library</h4>
-                </button></li>
+                </button></a></li>
 
                             <li><a href="/guestbook"><button onclick="location.href='/guestbook';" class="{{ 'active' if '/guestbook' in page.url }}" ><img class="icon" style="vertical-align: middle;"
                     src="/images/icons/address_book_pad_users.png"></img>
