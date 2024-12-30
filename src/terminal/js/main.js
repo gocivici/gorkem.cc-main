@@ -337,10 +337,6 @@ jQuery(document).ready(function($) {
             var path = '~'
             p("[[b;#FFA500;]"+ e + ":" + path + "# ]");
         },
-        onBlur: function() {
-            // prevent loosing focus
-            return false;
-        },
         tabcompletion: true
         });
 
