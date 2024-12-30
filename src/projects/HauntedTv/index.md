@@ -28,7 +28,7 @@ src="img/demo.mp4" style="width:100%"></video>
 
 
 📝**NOTE**
-This project is archived and no longer maintained. While the core concepts may still be applicable, the instructions and code provided may not work with the latest versions of hardware, software, or libraries. It was originally published on instructables, you can view the comments to the original article on this archived link: [https://archive.ph/5B1hY](https://archive.ph/2LUzj){target="_blank"}  
+This project is archived and no longer maintained. While the core concepts may still be applicable, the instructions and code provided may not work with the latest versions of hardware, software, or libraries. It was originally published on instructables, you can view the comments to the original article on this archived link: [https://archive.ph/2LUzj](https://archive.ph/2LUzj){target="_blank"}  
 {.note}
 
 Happy Halloween!

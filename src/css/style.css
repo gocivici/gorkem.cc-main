@@ -801,6 +801,7 @@ text-decoration:none; */
         color: #f9bc60;
         /* color: #f9bc60; */
         border: 3px #BEBEBE inset;
+        overflow: hidden;
         /* border-right: 2px solid gray;
         border-left: 2px solid gray; */
 
