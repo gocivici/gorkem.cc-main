@@ -1,0 +1,118 @@
+---
+title: "🌌 AstroSketch Image Invert Utility"
+header: "Tools & Utilities"
+layout: "base.njk"
+summary: "Image convertion tool to invert negative astronomy sketches"
+thumbnailImg: "thumbnail.png"
+---
+
+ <link rel="stylesheet" href="{{'/tools/tamascale.css' | url | safe}}">
+
+<div id="flex" style="max-width:500px;margin:auto;">
+  <div class="left-box">
+    <div class="window main-left">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">🔎 TamaScale.exe</div>
+        <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <main class="astroContainer">
+          {# <h4>AstroSketch Invert</h4> #}
+          <div class="astroFlex">
+          <div class="astrotext">
+          <p>This tool allows you to upscale images from <a target="_blank" href="https://tamagotchi.fandom.com/wiki/Tamagotchi_Uni/Social_media">Tamagotchi Uni</a> to HD</p>
+          <p>Operates directly in your browser via native JavaScript, no images are uploaded to a server.</p>
+          
+          </div>
+          
+          <figure>
+          <img style="width:100px;" src="/images/kuchi.png"></img>
+          </figure>
+          </div>
+          <p style="text-align:left;margin-top:0px;">Select your image using the button below and click Submit. </p>
+
+  {# <hr> #}
+
+        <form id="settings">
+
+        {# <p><label for="file" style="cursor: pointer;"><b>Upload Image</b></label></p> #}
+        
+<div class="settings">
+  <div class="field-row flexwrap">
+    <input class="centerButton" type="file" accept="image/*;capture=camera" name="image" id="file"  onchange="loadFile(event)">
+
+  </div>
+  
+</div>
+
+        <img id="img" />
+
+        </form>
+        <br>
+        <button id="submitButton">Submit</button>
+        
+</main>
+
+
+  <script type="text/javascript" src="/tools/tamascale.js"></script>
+
+        </div>
+        </div>
+        
+                <p id="result">⬇️Scaled Image⬇️</p>
+                
+        {# (Right click or hold to save) #}
+         
+ <div id="outputWindow">
+  <div class="left-box">
+    <div class="window main-left">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">🖼️ scaled.png</div>
+        <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        {# <div id="output"></div> #}
+        <canvas id="myCanvas"></canvas>
+        <a id="dl" download="Sketch.png" href="#">Download Result</a>
+        {# <button id="DLbutton" download="Sketch.png" onclick="">Download Result</button> #}
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+</div>
+<small  style="display:block;justify-content:center;font-size:12px;text-align: center;"><a href="">Source code</a> available on project repo</small>
+<small style="display:block;justify-content:center;font-size:12px;text-align: center;padding:10px 0 0 0;">Copyright © 2024 Görkem Bozkurt, licensed under  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a> </small>
+
+<div class="centerbuttons">
+  <img src="/images/buttons/mobile.png">
+  <img src="/images/buttons/button257.gif">
+  <img src="/images/buttons/sendit.gif">
+  </div>
+
+
+</div>
+
+
+
+        
+
+
+
+
+
+
+{# <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script> #}
+
+<script src="/custom.js"></script>
+{# <script src="/bgswitch.js"></script> #}

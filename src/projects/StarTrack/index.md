@@ -13,4 +13,3 @@ tech:
 siteUrl: "#"
 repoUrl: "#"
 ---
-![under construction](/images/construction.gif)

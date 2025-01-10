@@ -12,13 +12,22 @@ tech:
   - "Kinetic"
   - "Clock"
 siteUrl: "#"
-repoUrl: "#"
+repoUrl: "https://code.gorkyver.com/Gorkem/MarbleClock"
 ---
 
 https://www.youtube.com/watch?v=D74zF-GMfIw
 
-⚠️WARNING: Archived Guide
-This project is archived and no longer maintained. While the core concepts may still be applicable, the instructions and code provided may not work with the latest versions of hardware, software, or libraries.  {.warning}
+**Featured on**
+<img class="featured" src="/css/vice.png"> [VICE | This 3D Printed Clock Runs on Marbles and Watching it Is Soothing Me](https://www.vice.com/en/article/this-3d-printed-clock-runs-on-marbles-and-watching-it-is-soothing-me/){target="_blank"}
+<img class="featured" src="/css/dt.jpg"> [Digital Trends | Forget hands — this 3D-printed clock keeps time using nothing but marbles](https://www.digitaltrends.com/cool-tech/rolling-ball-clock-3d-printed/){target="_blank"}
+<img class="featured" src="/css/boing.png"> [Boing Boing | How to make a 3D printed rolling marble clock](https://boingboing.net/2018/09/06/how-to-make-a-3d-printed-rolli.html){target="_blank"}
+<img class="featured" src="/css/arduino.png"> [Arduino Blog | Ingenious marble clock runs on Arduino](https://blog.arduino.cc/2018/08/01/ingenious-marble-clock-runs-on-arduino/){target="_blank"}
+<img class="featured" src="/css/hackaday.png"> [Hackaday.com | A 3D Printed Marble Clock](https://hackaday.com/2018/09/12/a-3d-printed-marble-clock/){target="_blank"}
+<img class="featured" src="/css/hackster.png"> [Hackster.io | 3D-Printed Rolling Ball Clock](https://www.hackster.io/news/3d-printed-rolling-ball-clock-e0402f82e362){target="_blank"} {.press}
+
+📝**NOTE**
+This project is archived and no longer maintained. While the core concepts may still be applicable, the instructions and code provided may not work with the latest versions of hardware, software, or libraries. It was originally published on instructables, you can view the comments to the original article on this archived link: [https://archive.ph/YbDOk](https://archive.ph/YbDOk){target="_blank"}  
+{.note}
 
 Marble Clock is a 3D printed rolling ball clock that tells the time by the location of marbles/balls. It consists of 3 main rails, where,
 
@@ -107,37 +116,50 @@ all parts are on step 5 I recommend you to read read step5 before printing them.
 ## Step 4: Design Process
 
 <div class="imageSlides">
-<section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+<section id="main-carousel" class="splide" aria-label="project images">
   <div class="splide__track">
     <ul class="splide__list">
       <li class="splide__slide">
-        <img src="img/Design1.png" alt="">
+        <img src="img/design1.webp" alt="">
       </li>
       <li class="splide__slide">
-        <img src="img/design5.png" alt="">
+        <img src="img/design2.webp" alt="">
       </li>
       <li class="splide__slide">
-        <img src="img/design3.png" alt="">
+        <img src="img/design3.webp" alt="">
       </li>
       <li class="splide__slide">
-        <img src="img/Design4.png" alt="">
+        <img src="img/design4.webp" alt="">
       </li>
+      <li class="splide__slide">
+        <img src="img/design5.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/design6.webp" alt="">
+      </li>
+
     </ul>
   </div>
 </section>
 </div>
 <ul id="thumbnails" class="thumbnails">
   <li class="thumbnail">
-    <img src="img/Design1.png" alt="">
+    <img src="img/design1.webp" alt="">
   </li>
   <li class="thumbnail">
-    <img src="img/design5.png" alt="">
+    <img src="img/design2.webp" alt="">
   </li>
   <li class="thumbnail">
-    <img src="img/design3.png" alt="">
+    <img src="img/design3.webp" alt="">
   </li>
   <li class="thumbnail">
-    <img src="img/Design4.png" alt="">
+    <img src="img/design4.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/design5.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/design6.webp" alt="">
   </li>
 </ul>
 
@@ -178,6 +200,72 @@ Each part is given a number and a letter. these will be useful while following t
 
 ## Step 6: Base Assembly
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/base1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base2.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base3.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base4.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base5.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base6.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base7.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base8.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base9.webp" alt="">
+      </li>
+
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/base1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base2.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base3.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base4.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base5.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base6.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base7.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base8.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base9.webp" alt="">
+  </li>
+</ul>
+
 you can use the pdf template to drill holes on the wood.
 
 Parts used in this step:
@@ -201,6 +289,9 @@ Estimated Time:
 Note: Assembly instructions are noted on the images.
 
 ## Step 7: Center of Gravity
+
+<video controls autoplay loop muted playsinline src="img/gravity.mp4" style="width:100%"></video>
+
 This is the most important part of this project. I did not design the rail pieces connected to the joints. This way everyone can adjust them to their needs. The rails and the connectors under them are not attached. You have to figure out the center of gravity and glue it when you are certain. Let's begin,
 
 ### The 5min rail:
@@ -218,6 +309,48 @@ This is the same as the 15min rail. wherever you glued the connector on the 15mi
 Lastly, to test them all at once put 11 balls on the hour and 15min rails and 4 balls on the 5 min rail. then drop one ball to the 5 min rail. They all should go smoothly and leave the rails
 
 ## Step 8: Elevator Assembly
+
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/elevator1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/elevator2.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/elevator3.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/elevator4.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/elevator5.webp" alt="">
+      </li>
+
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/elevator1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/elevator2.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/elevator3.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/elevator4.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/elevator5.webp" alt="">
+  </li>
+</ul>
 
 Parts used in this step:
 
@@ -241,6 +374,8 @@ Estimated Time:
 Note: Assembly instructions are noted on the images.
 
 ## Step 9: Driving the Motor & Timing
+
+![motor](img/motor.webp)
 
 ### How to drive the motor
 
@@ -275,6 +410,9 @@ new motor speed(m) =(T*M) / t
 Insert this into the code and check your stopwatch again, repeat this until you are satisfied with the result
 
 ## First Test
+
+![first](img/firsttest.webp)
+
 You're done with the build now it's time to test this clock!
 
 Check your watch and put the balls according to the time. And start the motor when you are ready. It's really fun to watch time go by with this clock. Go and put yourself some tea and enjoy the sound off balls clicking. Now while doing that you should check a few things to be sure that this clock can run for 7/24 straight.
@@ -289,3 +427,32 @@ If your answer is no for at least one of those questions, you can check the Trou
 If your answer is yes, then congratulations you've built a precise ball clock!
 
 ## Troubleshooting
+
+**\- Balls are not moving easily on the rails**
+
+Sometimes filament residue blocks the balls. use a sandpaper to sand the pieces.
+
+**\- The motor is stopping after a few hours.**
+
+Try to connect external power to the motor.
+
+**\-the balls are falling even though I set them not to fall**
+
+The surface the clock is on can effect this try to change the location of the clock
+
+**\-The clock is not on time**
+
+Repeat the timing step as much as you can until you are satisfied
+
+## Step 12: What's Next
+
+There are lots of things that can be improved on this clock. Here are a few that I have in mind.
+
+- Adding an am-pm rail.
+- Adding a bell so it makes a sound every hour.
+- Creating a more stylish ball descent system. instead of the ball tower that just drops the balls.
+- Make a bigger version with different kind of balls
+
+I hope you enjoyed this instructable.
+
+If you have any questions ask away! & tell me about your build!

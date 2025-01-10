@@ -272,7 +272,7 @@ location.reload();
 
     },
          cv: function() {
-        this.echo("Seriously, you came this far asking for a CV?")
+        // this.echo("Seriously, you came this far asking for a CV?")
         this.error("Try again, please.");
 
     },
@@ -330,7 +330,7 @@ jQuery(document).ready(function($) {
                     // "]\n\n[[;#44D544;]Welcome stranger,\ntype] [[b;#fff;]help] [[;#44D544;]to list available commands,\n][[b;#fff;]whoareyou] [[;#44D544;]to read something about me,\nor ][[b;#fff;]about][[;#44D544;] to learn about this webpage. ]\n\n",
                     "\n]\n[[;#dedede;]Hi, welcome to my little corner on the internet!][[;#FFA500;]                     \n"+
                     "][[;#dedede;]Type] [[b;#FFA500;]help] [[;#dedede;]to list available commands,][[;#FFA500;]                                ]\n"+
-                    "[[b;#FFA500;]projects] [[;#dedede;]to view the projects I've been working on,][[;#FFA500;]                  \n"+
+                    "[[b;#FFA500;]startx] [[;#dedede;]if you prefer a graphical interface,][[;#FFA500;]                  \n"+
                     "][[;#dedede;]or ][[b;#FFA500;]about][[;#dedede;] to learn more about me.][[;#FFA500;]                                     ]\n[[;#FFA500;]                                                                           \n",
 
                 prompt: function(p){

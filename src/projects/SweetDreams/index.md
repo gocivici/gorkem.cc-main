@@ -9,7 +9,7 @@ type: "Project Showcase"
 tech:
   - "Woodworking"
 siteUrl: "#"
-repoUrl: "#"
+repoUrl: "https://code.gorkyver.com/Gorkem/sweetDreams-flugtag"
 ---
 
 https://www.youtube.com/watch?v=xsQtul_IY5A
@@ -33,7 +33,7 @@ Teams are judged on three criteria:
 
 - Flight distance
 - Creativity
-- showmanship
+- Showmanship
 
 **Note:** _The rules of the event can change from city to city. These rules were written for the 4th Istanbul Redbull Flugtag. Check your local event page for details._
 
@@ -41,13 +41,36 @@ _\[1\]_[https://www.redbull.com/ucusgunu](https://www.redbull.com/ucusgunu)
 
 ## Assemble Your Team
 
-
+![team](img/team.webp)
 
 After I heard that Flugtag was coming to my town, I contacted some friends which I knew would be as excited as I am. They were all from different backgrounds which made the building process much more enjoyable. Everyone learned new things from each other!
 
 ## The Idea & Application
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/idea1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/idea2.webp" alt="">
+      </li>
 
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/idea1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/idea2.webp" alt="">
+  </li>
+
+</ul>
 
 After a long brainstorming session, we decided to create a dream themed aircraft. The idea was to create a 2-part airplane, where the first part was a carriage shaped like a bed to carry the plane, which would fall after it was pushed off the pier.
 
@@ -103,6 +126,30 @@ Cutting knife
 
 ## Design Process - Plane
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/design1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/design2.webp" alt="">
+      </li>
+
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/design1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/design2.webp" alt="">
+  </li>
+
+</ul>
 
 
 The airfoil of this aircraft is NACA 2415. This airfoil was chosen because it can generate large lift in slow speeds, which is what we needed. The overall structure of the plane was created in xflr5 to analyze lift data and make adjustments accordingly. If you are new to xflr5 you can find more info here:
@@ -126,7 +173,30 @@ We created 4 characters for our performance
 
 ## Marking & Cutting
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/curring1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/curring2.webp" alt="">
+      </li>
 
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/curring1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/curring2.webp" alt="">
+  </li>
+
+</ul>
 
 
 We printed the airfoil on a large piece of paper and cut along the lines to create a template, later we used this template to trace the lines on to the foam.
@@ -135,7 +205,30 @@ At first, we used a razor blade to cut the foam but it got harder with time. So 
 
 ## 3D Printing & Laser Cutting
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/printing1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/printing2.webp" alt="">
+      </li>
 
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/printing1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/printing2.webp" alt="">
+  </li>
+
+</ul>
 
 ### 3D printing
 
@@ -153,13 +246,43 @@ The printer I used is the TEVO Tornado with the following settings:
 
 the most important part of the plane is the junction between the two wings. This junction has to be strong enough to carry around 70-80kg's. we decided to laser cut metal to connect these two pieces with 14mm steel bolts.
 
-### Attachments
-
-
-    
-
 ## Assembly - Wings
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/wings1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/wings2.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/wings3.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/wings4.webp" alt="">
+      </li>
+
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/wings1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/wings2.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/wings3.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/wings4.webp" alt="">
+  </li>
+</ul>
 
 
 For this part you'll need:
@@ -179,6 +302,36 @@ _**Note:** After gluing each part you should use a clamp to secure it. This is a
 
 ## Assembly - Covering Film
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/assembly1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/assembly2.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/assembly3.webp" alt="">
+      </li>
+
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/assembly1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/assembly2.webp" alt="">
+  </li>
+    <li class="thumbnail">
+    <img src="img/assembly3.webp" alt="">
+  </li>
+
+</ul>
 
 
 The covering film that we've used is some cheap nylon that we found on Bauhaus. We stretched and used staplers to attach the nylon to the wood. I do not recommend this option since this nylon is fragile. We had no choice to use another option because we did not have much time and budget.
@@ -186,6 +339,30 @@ The covering film that we've used is some cheap nylon that we found on Bauhaus. 
 ## Assembly - Body
 
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/body1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/body2.webp" alt="">
+      </li>
+
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/body1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/body2.webp" alt="">
+  </li>
+
+</ul>
 
 In this step you'll need:
 
@@ -198,7 +375,47 @@ In this step you'll need:
 
 ## Assembly - Base
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/base1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base2.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base3.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base4.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/base5.webp" alt="">
+      </li>
 
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/base1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base2.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base3.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base4.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/base5.webp" alt="">
+  </li>
+</ul>
 
 In this part you'll need:
 
@@ -213,39 +430,130 @@ In this part you'll need:
 ## Sewing
 
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/sewing1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/sewing2.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/sewing3.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/sewing4.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/sewing5.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/sewing6.webp" alt="">
+      </li>
 
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/sewing1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/sewing2.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/sewing3.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/sewing4.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/sewing5.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/sewing6.webp" alt="">
+  </li>
+</ul>
 
 
 ## Getting Ready for the Road
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/road1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/road2.webp" alt="">
+      </li>
 
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/road1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/road2.webp" alt="">
+  </li>
+
+</ul>
 
 We carefully placed the wings on the back of the truck and tied them tightly in to place so they would not move.
 
 ## Final Assembly
 
+<div class="imageSlides">
+<section id="main-carousel" class="splide" aria-label="project images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="img/final1.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/final2.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/final3.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/final4.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="img/final5.webp" alt="">
+      </li>
 
+    </ul>
+  </div>
+</section>
+</div>
+<ul id="thumbnails" class="thumbnails">
+  <li class="thumbnail">
+    <img src="img/final1.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/final2.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/final3.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/final4.webp" alt="">
+  </li>
+  <li class="thumbnail">
+    <img src="img/final5.webp" alt="">
+  </li>
+</ul>
 
 After we got the plane out of the truck we realized that the covering film on the plane was torn apart. Lucky we brought some backup covering film, we re-covered the tail of the plane with duct tape. The pillows and sheets were attached using a stapler to the bed. Also, some details such as the stars on the plane were cut and pasted on the plane.
 
-## Troubleshooting
-
-
-
-**\- The covering film is damaged**
-
-Go and grab some duct tape!
-
-**\- I accidently broke the foam**
-
-Well mistakes happen, you can change the foam by just cutting the damaged part end replacing it. bring some extra foam with you.
-
-**\-The glue is not holding the wood/foam**
-
-There are special glues for special materials try a different glue according to the material you use.
-
 ## Have FUN!
-
-
 
 Our plane was blown over on the ground by a strong wind and the tailpiece was broken before we even could go off the pier. But we decided to jump anyways. If you watch the video you'll see the broken piece on the plane. Accidents happen and you can't be prepared for everything. So even though our plane failed, in the end, we had a lot of fun building, traveling and dancing/performing together!
