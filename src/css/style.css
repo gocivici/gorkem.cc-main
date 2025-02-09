@@ -1796,6 +1796,7 @@ padding: 8px;
 
 
 #linuxring {
+    all: reverse;
     margin: 0 auto;
     padding: 5px;
     color: black !important;
@@ -1803,6 +1804,8 @@ padding: 8px;
   
   #linuxring a {
     color: black !important;
+    text-shadow: none;
+    text-decoration: none;
   }
   
   #linuxring table {
@@ -1812,7 +1815,7 @@ padding: 8px;
   }
   
   #linuxring table tr td {
-    padding: 10px;
+    /* padding: 10px; */
     color: black;
   }
   
@@ -1829,9 +1832,13 @@ padding: 8px;
   }
   
   #linuxring .webring-links {
-    font-size: 11pt;
+    font-size: 16pt;
   }
 
+  #linuxring .webring-links img{
+    width: 50%;
+    padding: 0px;
+  }
     @media only screen and (max-width: 800px) {
         #webamp{
             display:none;
