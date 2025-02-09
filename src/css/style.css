@@ -1798,7 +1798,7 @@ padding: 8px;
 #linuxring {
     /* all: reverse; */
     margin: 0 auto;
-    padding: 5px;
+    padding: 0px 5px 20px 5px;
     color: black !important;
   }
   
