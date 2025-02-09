@@ -16,6 +16,10 @@
         display:none;
     }
 
+    .webrings{
+        all:initial;
+    }
+
     /* if you have the URL of a font, you can set it below */
     /* feel free to delete this if it's not your vibe */
 
@@ -1397,13 +1401,7 @@ between the sidebars! */
       ol {
         padding-left:30px;
       }
-    /* what's this "order" stuff about??
-allow me to explain!
-if you're using both sidebars, the "order" value
-tells the CSS the order in which to display them.
-left sidebar is 1, content is 2, and right sidebar is 3! */
-
-    */ #leftSidebar {
+ #leftSidebar {
         order: 1;
     }
 
@@ -1797,14 +1795,42 @@ padding: 8px;
 }
 
 
-    /* BELOW THIS POINT IS MEDIA QUERY */
-
-    /* so you wanna change the width of your page? 
-by default, the container width is 900px.
-in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
-"max-width" value below
-*/
+#linuxring {
+    margin: 0 auto;
+    padding: 5px;
+    color: black !important;
+  }
+  
+  #linuxring a {
+    color: black !important;
+  }
+  
+  #linuxring table {
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  #linuxring table tr td {
+    padding: 10px;
+    color: black;
+  }
+  
+  #linuxring .webring-prev {
+    text-align:right;
+  }
+  
+  #linuxring .webring-info {
+     text-align:center;
+  }
+  
+  #linuxring .webring-next {
+    text-align:left;
+  }
+  
+  #linuxring .webring-links {
+    font-size: 11pt;
+  }
 
     @media only screen and (max-width: 800px) {
         #webamp{
