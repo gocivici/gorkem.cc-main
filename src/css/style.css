@@ -1796,7 +1796,7 @@ padding: 8px;
 
 
 #linuxring {
-    all: reverse;
+    /* all: reverse; */
     margin: 0 auto;
     padding: 5px;
     color: black !important;
@@ -1836,7 +1836,7 @@ padding: 8px;
   }
 
   #linuxring .webring-links img{
-    width: 50%;
+    width: 30%;
     padding: 0px;
   }
     @media only screen and (max-width: 800px) {
