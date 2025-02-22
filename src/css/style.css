@@ -117,7 +117,7 @@ and then link it! Many fonts have separate files for each style
 
     @font-face {
         font-family: IBM;
-        src: url(./Web437_NEC_APC3_8x16.woff);
+        src: url(./Web437_NEC_APC3_8x16_TR.ttf);
         font-style: normal;
         
     }

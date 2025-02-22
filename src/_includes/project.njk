@@ -55,12 +55,14 @@ body {
       {% endfor %}
     </div>
     <div class="dateandrepo">
+      <a href="{{ repoUrl }}"><span style="font-size:15px;"><img
+                  style="width:25px;vertical-align: middle; padding-right:5px;" src="/images/icons/directory_control_panel-3.png"></img>Project Files & Downloads</span></a>
+
   <small class="dateString"><strong>Created:</strong> {{ created | postDate }} | <strong>Updated:</strong> {{ page.date | postDate }}</small>
       
-      <a href="{{ repoUrl }}"><span style="font-size:15px;"><img
-                  style="width:25px;vertical-align: middle; padding-right:5px;" src="/images/icons/directory_control_panel-3.png"></img>Project Repo</span></a>
-
+      
 </div>
+{# <hr> #}
 </div>
 </div>
   <div class="project__image-wrapper">
@@ -105,7 +107,8 @@ body {
             </div>
 
                         <div class="right-box TOCnav">
-                <div class="window main-right fixed">
+                          <div class="fixed">
+                <div class="window main-right">
                     <div class="title-bar inactive">
                         <div class="title-bar-text">Navigation.exe</div>
                         <div class="title-bar-controls">
@@ -114,13 +117,35 @@ body {
                           </div>
                     </div>
                 <div class="window-body" style="padding-bottom: 0px;">
-                <div id="rightSidebar tocNavigation" style="padding-bottom: 0px; margin-bottom: 0px; max-height: 600px; overflow-y:auto;">
+                <div id="rightSidebar tocNavigation" style="padding-bottom: 0px; margin-bottom: 0px; max-height: 500px; overflow-y:auto;">
                     {{ content | toc | safe }}
                 </div>
                 </div>
-                <a href="{{ repoUrl }}"><p style="text-align: center;" class="repoUrl"><img
+                {# <a href="{{ repoUrl }}"><p style="text-align: center;" class="repoUrl"><img
                   style="width:30px;vertical-align: middle; padding-right:5px;" src="/images/icons/directory_control_panel-3.png"></img>Project Repo</p></a>
+                                     #}
+             </div>   
+              <div class="window main-right">                   
+              <div class="title-bar inactive">
+                        <div class="title-bar-text">CoffeeFund.exe</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Help"></button>
+                            <!-- <button aria-label="Close"></button> -->
+                          </div>
+                    </div>
+                <div class="window-body" style="text-align:center;">
+
+                  <p style="margin-bottom:8px;">Coffee helps me build projects like these!</p>
+
+                <a href='https://ko-fi.com/S6S0ETKTV'><img height='36' style='padding:3px;border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
                 </div>
+                </div>
+                </div>
+                
+                
+
+                                
+
 
 
 
