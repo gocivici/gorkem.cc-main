@@ -15,8 +15,8 @@ canvas{
   .astroContainer{
  
     font-size:16px;
-    text-align:center;
-    align-items: center;
+    /* text-align:center;
+    align-items: center; */
 
     /* flex-wrap: wrap; */
     /* {# width: 100%; #} */
@@ -29,11 +29,7 @@ canvas{
         background:url("/images/divider.gif") 0 0; 
     
   }
-  .astroFlex{
-    margin-top: 20px;
-    display: flex;
-    flex: 1;
-  }
+
   .astrotext{
     order:1;
     text-align: left;
@@ -90,13 +86,7 @@ canvas{
      font-size:22px;
      display:none;
   }
-  .settings{
-  
-    font-size:16px !important;
-    max-width:400px;
-    text-align:center;
-    margin:auto;
-  }
+
   
   .field-row{
     margin-top:20px;
@@ -105,13 +95,7 @@ canvas{
     /* flex-wrap: wrap; */
   }
 
-  .flexwrap{
-    display:flex;
-    flex-wrap: wrap;
-    width:auto;
-    text-align:center;
-    justify-content:center;
-  }
+
 
   .invert, .grayscale{
     display: flex;
@@ -129,22 +113,25 @@ canvas{
   }
 
 
-  #formContainer{
-    width:400px;
-    margin:auto;
-  }
+
   #formC{
     width:100%;
   }
   .rows{
     width:100%;
-    display:block;
+    display:flex;
+    justify-content: space-between;
   
   }
   .column{
-      width:100%;
-      display:inline-block;
+      width:280px;
+      /* display:inline-block; */
       
+  }
+
+  .column h3{
+    margin-bottom: 0px;
+    font-size: 20px;
   }
   .theLabels{
     
@@ -154,9 +141,8 @@ canvas{
     /* float:left; */
   }
 
-  .label {
-    align-items: right !important;
-    justify-content:right !important;
+  label {
+    align-items: start !important;
   }
   .theInputs{
     
@@ -178,5 +164,8 @@ canvas{
       .left-box{
         padding-right: 5px;
         padding-left: 5px;
+      }
+      .rows{
+        flex-direction: column;
       }
   }

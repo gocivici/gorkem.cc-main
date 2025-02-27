@@ -1,0 +1,202 @@
+---
+title: "🌌 AstroSketch Image Invert Utility"
+header: "OSCARS 2025"
+layout: "base.njk"
+summary: "Image convertion tool to invert negative astronomy sketches"
+thumbnailImg: "thumbnail.png"
+---
+
+ <link rel="stylesheet" href="{{'/tools/oscars2025.css' | url | safe}}">
+
+<div id="flex" style="margin:auto;">
+  <div class="left-box">
+    <div class="window main-left">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">2025 Oscars Nominees Checklist</div>
+        <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <main class="astroContainer">
+<div id="formContainer">
+<form id="formC">
+<div class="rows">
+
+  
+<div class="column">
+    <h3>Best Picture</h3>
+<input type="checkbox" id="anora">
+<label for="anora">Anora</label><br>
+<input type="checkbox" id="the_brutalist">
+<label for="the_brutalist">The Brutalist</label><br>
+<input type="checkbox" id="a_complete_unknown">
+<label for="a_complete_unknown">A Complete Unknown</label><br>
+<input type="checkbox" id="conclave">
+<label for="conclave">Conclave</label><br>
+<input type="checkbox" id="dune_part_two">
+<label for="dune_part_two">Dune: Part Two</label><br>
+<input type="checkbox" id="emilia_perez">
+<label for="emilia_perez">Emilia Pérez</label><br>
+<input type="checkbox" id="im_still_here">
+<label for="im_still_here">I'm Still Here</label><br>
+<input type="checkbox" id="nickel_boys">
+<label for="nickel_boys">Nickel Boys</label><br>
+<input type="checkbox" id="the_substance">
+<label for="the_substance">The Substance</label><br>
+<input type="checkbox" id="wicked">
+<label for="wicked">Wicked</label><br>
+
+</div>
+
+
+<div class="column">
+<h3>Best Director</h3>
+<input type="checkbox" id="sean_baker">
+<label for="sean_baker">Sean Baker (Anora)</label><br>
+<input type="checkbox" id="brady_corbet">
+<label for="brady_corbet">Brady Corbet (The Brutalist)</label><br>
+<input type="checkbox" id="james_mangold">
+<label for="james_mangold">James Mangold (A Complete Unknown)</label><br>
+<input type="checkbox" id="jacques_audiard">
+<label for="jacques_audiard">Jacques Audiard (Emilia Pérez)</label><br>
+<input type="checkbox" id="coralie_fargeat">
+<label for="coralie_fargeat">Coralie Fargeat (The Substance)</label><br>
+
+</div>
+
+<div class="column">
+<h3>Best Actress</h3>
+<input type="checkbox" id="cynthia_erivo">
+<label for="cynthia_erivo">Cynthia Erivo (Wicked)</label><br>
+<input type="checkbox" id="karla_gascon">
+<label for="karla_gascon">Karla Sofía Gascón (Emilia Pérez)</label><br>
+<input type="checkbox" id="mikey_madison">
+<label for="mikey_madison">Mikey Madison (Anora)</label><br>
+<input type="checkbox" id="demi_moore">
+<label for="demi_moore">Demi Moore (The Substance)</label><br>
+<input type="checkbox" id="fernanda_torres">
+<label for="fernanda_torres">Fernanda Torres (I'm Still Here)</label><br>
+</div>
+
+</div>
+
+<div class="rows">
+
+<div class="column">
+<h3>Best Actor</h3>
+<input type="checkbox" id="adrien_brody">
+<label for="adrien_brody">Adrien Brody (The Brutalist)</label><br>
+<input type="checkbox" id="timothee_chalamet">
+<label for="timothee_chalamet">Timothée Chalamet (A Complete Unknown)</label><br>
+<input type="checkbox" id="colman_domingo">
+<label for="colman_domingo">Colman Domingo (Sing Sing)</label><br>
+<input type="checkbox" id="ralph_fiennes">
+<label for="ralph_fiennes">Ralph Fiennes (Conclave)</label><br>
+<input type="checkbox" id="sebastian_stan">
+<label for="sebastian_stan">Sebastian Stan (The Apprentice)</label><br>
+</div>
+
+<div class="column">
+<h3>Best Supporting Actress</h3>
+<input type="checkbox" id="monica_barbaro">
+<label for="monica_barbaro">Monica Barbaro (A Complete Unknown)</label><br>
+<input type="checkbox" id="ariana_grande">
+<label for="ariana_grande">Ariana Grande (Wicked)</label><br>
+<input type="checkbox" id="felicity_jones">
+<label for="felicity_jones">Felicity Jones (The Brutalist)</label><br>
+<input type="checkbox" id="isabella_rossellini">
+<label for="isabella_rossellini">Isabella Rossellini (Conclave)</label><br>
+<input type="checkbox" id="zoe_saldana">
+<label for="zoe_saldana">Zoe Saldaña (Emilia Pérez)</label><br>
+</div>
+
+<div class="column">
+<h3>Best Supporting Actor</h3>
+<input type="checkbox" id="yura_borisov">
+<label for="yura_borisov">Yura Borisov (Anora)</label><br>
+<input type="checkbox" id="kieran_culkin">
+<label for="kieran_culkin">Kieran Culkin (A Real Pain)</label><br>
+<input type="checkbox" id="edward_norton">
+<label for="edward_norton">Edward Norton (A Complete Unknown)</label><br>
+<input type="checkbox" id="guy_pearce">
+<label for="guy_pearce">Guy Pearce (The Brutalist)</label><br>
+<input type="checkbox" id="jeremy_strong">
+<label for="jeremy_strong">Jeremy Strong (The Apprentice)</label><br>
+</div>
+
+</div>
+
+
+
+</form>
+</div>
+
+
+        <img id="img" />
+
+        <button id="submitButton">Submit</button>
+        
+</main>
+
+
+  <script type="text/javascript" src="/tools/payrolldeduction.js"></script>
+
+        </div>
+        </div>
+        
+                <p id="result">⬇️Converted Image⬇️</p>
+                
+        {# (Right click or hold to save) #}
+         
+ <div id="outputWindow">
+  <div class="left-box">
+    <div class="window main-left">
+      <div class="title-bar inactive">
+        <div class="title-bar-text">🖼️ Sketch.png</div>
+        <div class="title-bar-controls">
+          <!-- <button aria-label="Help"></button> -->
+          <button disabled aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        {# <div id="output"></div> #}
+        <canvas id="myCanvas"></canvas>
+        <a id="dl" download="Sketch.png" href="#">Download Result</a>
+        {# <button id="DLbutton" download="Sketch.png" onclick="">Download Result</button> #}
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+</div>
+<small  style="display:block;justify-content:center;font-size:12px;text-align: center;"><a href="https://github.com/gocivici/astrosketch">Source code</a> available on GitHub</small>
+<small style="display:block;justify-content:center;font-size:12px;text-align: center;padding:10px 0 0 0;">Copyright © 2024 Görkem Bozkurt, licensed under  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a> </small>
+
+<div class="centerbuttons">
+  <img src="/images/buttons/mobile.png">
+  <img src="/images/buttons/button257.gif">
+  <img src="/images/buttons/sendit.gif">
+  </div>
+
+
+</div>
+
+
+
+        
+
+
+
+
+
+
+{# <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script> #}
+
+<script src="/custom.js"></script>
+{# <script src="/bgswitch.js"></script> #}
