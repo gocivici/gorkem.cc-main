@@ -196,4 +196,17 @@ initComments({
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="/splide-init.js"></script>
+<script>
 
+sendPresence();  
+function sendPresence() {
+  fetch('https://presence.gorkyver.com/heartbeat', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ page: "projects" })
+  });
+}
+             
+setInterval(sendPresence, 15000); 
+
+</script>

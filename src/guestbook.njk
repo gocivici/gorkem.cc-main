@@ -71,3 +71,17 @@ initComments({
   guestPostingEnabled: "true"
 })
 </script>
+<script>
+
+sendPresence();  
+function sendPresence() {
+  fetch('https://presence.gorkyver.com/heartbeat', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ page: "guestbook" })
+  });
+}
+             
+setInterval(sendPresence, 15000); 
+
+</script>

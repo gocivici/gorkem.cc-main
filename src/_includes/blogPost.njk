@@ -116,3 +116,17 @@ initComments({
 <script src="/splide-init.js"></script>
 <script src="/custom.js"></script>
 <script src="/bgswitch.js?v=1.2"></script>
+<script>
+
+sendPresence();  
+function sendPresence() {
+  fetch('https://presence.gorkyver.com/heartbeat', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ page: "blog" })
+  });
+}
+             
+setInterval(sendPresence, 15000); 
+
+</script>

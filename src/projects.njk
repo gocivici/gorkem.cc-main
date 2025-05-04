@@ -80,3 +80,17 @@ type: "DIY"
 <script src="../projects.js"></script>
 <script src="/custom.js"></script>
 <script src="/bgswitch.js?v=1.1"></script>
+<script>
+
+sendPresence();  
+function sendPresence() {
+  fetch('https://presence.gorkyver.com/heartbeat', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ page: "projects" })
+  });
+}
+             
+setInterval(sendPresence, 15000); 
+
+</script>

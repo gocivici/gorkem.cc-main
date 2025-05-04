@@ -552,3 +552,18 @@ type: "Home"
         }
     }, 100)
 </script>
+
+<script>
+
+sendPresence();  
+function sendPresence() {
+  fetch('https://presence.gorkyver.com/heartbeat', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ page: "home" })
+  });
+}
+             
+setInterval(sendPresence, 15000); 
+
+</script>
