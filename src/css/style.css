@@ -491,7 +491,7 @@ img{
 
 .shelf{
     width:100%;
-    height:300px;
+    height:290px;
     display: flex;
     align-content:end;
     justify-content: space-between;
@@ -501,10 +501,14 @@ img{
 .bookCover{
     /* z-index:99; */
     /* bottom:0px; */
+
     transition: transform 500ms;
     width:190px;
+    /* width: 100%; */
     margin-bottom: -12px;
 }
+
+
 
 .bookCover:hover{
     transform: translateY(-20px);
@@ -1840,6 +1844,26 @@ padding: 8px;
     padding: 0px;
   }
     @media only screen and (max-width: 800px) {
+
+        .bookshelfcontainer{
+            background-image:none;
+        }
+
+        .shelf{
+            height:auto;
+            padding: 0px;
+            margin: 0px;
+            justify-content:center;
+        }
+
+        .bookshelftext{
+            padding: 5px 0px 0px 0px;
+        }
+
+        .bookCover{
+            width: 100%;
+        }
+
         #webamp{
             display:none;
         }
